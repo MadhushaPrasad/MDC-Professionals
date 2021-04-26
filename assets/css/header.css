@@ -1,54 +1,134 @@
-.container {
+:root {
+    /*header css variables start*/
+    --header-background-color: #ffffff;
+    --navigation-link-text-color: #306DC6;
+    --under-line-color: rgba(240, 187, 17, 1);
+    --primary-box-shadow: 0 3px 5px rgba(167, 167, 167, 0.471);
+    --button-background-color: #ffffff;
+    --button-text-color: #306DC6;
+    /*header css variables end*/
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/*start header styles*/
+.header {
     position: absolute;
-    top: 0;
     width: 100%;
     height: 50px;
+    top: 0;
+    background-color: var(--header-background-color);
     display: flex;
     flex-direction: row;
-    background-color: red;
+    align-items: center;
+    box-shadow: var(--primary-box-shadow);
+    font-family: 'Poppins';
+    font-weight: bold;
 }
 
-.imgDiv {
-    position: absolute;
-    width: 33.33%;
-    height: 50px;
-    left: 0;
+/*logoDiv styles*/
+.logoDiv {
+    position: relative;
+    width: 10%;
+    height: 2em;
     display: flex;
-    flex-direction: column;
-    background-color: darkblue;
+    justify-content: center;
+    align-items: center;
 }
 
-.linkDiv {
-    position: absolute;
-    width: 33.33%;
-    height: 50px;
-    left: 33.33%;
+/*navigation div styles*/
+.navLinkDiv {
+    position: relative;
+    width: 70%;
+    height: 2em;
     display: flex;
-    flex-direction: column;
-    background-color: green;
+    justify-content: start;
+    align-items: center;
 }
 
-.unOrderList {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    list-style: none;
+/*navigation div unOrder list styles*/
+
+.navLinkDiv ul {
+    padding-left: 0;
 }
 
-.unOrderList li {
+.navLinkDiv ul li {
     display: inline-block;
+    list-style: none;
     padding: 10px;
+    text-transform: uppercase;
+    color: var(--navigation-link-text-color);
+    cursor: pointer;
 }
 
-.signupDiv {
+.navLinkDiv ul li:first-child span {
     position: absolute;
-    width: 33.33%;
-    height: 50px;
-    right: 0;
+    width: 30px;
+    height: 5px;
+    background: var(--under-line-color);
+    left: 17px;
+    bottom: 0;
     display: flex;
-    flex-direction: column;
-    background-color: yellow;
+    border-radius: 600px;
 }
+
+/*button group styles*/
+
+.btnGroupDiv {
+    position: relative;
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btnGroupDiv button {
+    width: 100px;
+    height: 30px;
+    background-color: var(--button-background-color);
+    margin-right: 25px;
+    border-radius: 100px;
+    box-shadow: var(--primary-box-shadow);
+    outline: none;
+    border: none;
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+/*end header styles*/
+
+/*!*main section styles start from here*!*/
+/*main{*/
+/*    position: absolute;*/
+/*    top: 50px;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.imgDiv img{*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*}*/
