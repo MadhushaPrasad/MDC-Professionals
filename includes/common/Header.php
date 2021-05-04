@@ -1,20 +1,28 @@
-<div class="container">
-    <div class="imgDiv">
-        <img src="#" alt="logo">
+<header class="header">
+    <div class="logoDiv">
+        <img alt="logo" src="/MDC-Professionals/assets/images/small-logo.png">
     </div>
-    <div class="linkDiv">
-        <ul class="unOrderList">
-            <li>Home</li>
-            <li>Service</li>
-            <li>Finding a job</li>
-            <li>About us</li>
-            <li>Contact Us</li>
-        </ul>
+    <div class="navLinkDiv">
+        <a href="#">Home <br><span></span></a>
+        <a href="#">
+            <label>
+                <select>
+                    <option disabled selected value="0">Services</option>
+                    <option value="1">Job Seeker</option>
+                    <option value="2">Job Provider</option>
+                </select>
+            </label>
+        </a>
+        <a href="#">Find a job</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
     </div>
-    <div class="signupDiv">
-        <div class="loginDiv">
-            <button class="btnSignUp">Sign Up</button>
-            <button class="btnLogin">Login In</button>
-        </div>
+    <div class="btnGroupDiv">
+        <button>Sign Up</button>
+        <button>Login</button>
     </div>
-</div>
+    <div class="collapeBtnDiv">
+        <label for="toggle">&#9776;</label>
+        <input id="toggle" type="checkbox"/>
+    </div>
+</header>
