@@ -3,7 +3,8 @@
     bottom: 0;
     /*background: #306DC6;*/
     width: 100%;
-    height: 70vh;
+    height: 75vh;
+    font-family: 'Poppins';
 }
 
 .footer img {
@@ -14,7 +15,7 @@
 
 .footerContainer {
     position: absolute;
-    top: 32.80%;
+    top: 34%;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -35,6 +36,7 @@
     height: 180px;
     bottom: 30px;
     text-align: center;
+    color: #151D41;
 }
 
 .socialMediaDivContent img {
@@ -49,28 +51,115 @@
 
 .qLinkDiv {
     width: 25%;
-    height: 47vh;
-    background: yellow;
+    height: 49vh;
     display: flex;
     align-items: center;
 }
 
 .qLinkDivContainer {
     width: 40%;
-    height: 250px;
-    background-color: darkred;
+    height: 300px;
+}
 
+.qLinkDivContainer ul {
+    padding: 0;
+}
+
+.qLinkDivContainer ul li {
+    list-style: none;
+    padding: 10px 0 10px 0;
+}
+
+.qLinkDivContainer ul li a {
+    text-decoration: none;
+    color: #151D41;
 }
 
 .aboutUsDiv {
     width: 25%;
-    height: 47vh;
-    background: green;
+    height: 49vh;
+}
+
+.aboutUsDivContainer {
+    width: 90%;
+    height: 270px;
+    color: #151D41;
+}
+
+.aboutUsDivContainer p {
+    font-size: 15px;
 }
 
 .contactUsDiv {
     width: 25%;
-    height: 47vh;
-    background: red;
+    height: 49vh;
+    color: #151D41;
 }
 
+@media only screen and (max-width: 768px) {
+    .socialMediaDivContent {
+        position: absolute;
+        width: 20%;
+        height: 180px;
+        bottom: 0;
+        text-align: center;
+        color: #151D41;
+    }
+
+    .socialMediaDivContent h3 {
+        font-size: 15px;
+    }
+
+    .socialMediaDivContent img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .qLinkDivContainer {
+        width: 70%;
+        height: 230px;
+    }
+
+    .qLinkDivContainer h3 {
+        font-size: 15px;
+    }
+
+    .qLinkDivContainer ul li {
+        list-style: none;
+        padding: 2px 0 2px 0;
+    }
+
+    .qLinkDivContainer ul li a {
+        font-size: 10px;
+    }
+
+    .aboutUsDivContainer {
+        position: relative;
+        top: 18px;
+        width: 85%;
+        height: 200px;
+    }
+
+    .aboutUsDivContainer h3 {
+        font-size: 15px;
+    }
+
+    .aboutUsDivContainer p {
+        font-size: 7px;
+    }
+
+    .contactUsDivContainer {
+        position: relative;
+        top: 18px;
+        width: 85%;
+        height: 200px;
+    }
+
+    .contactUsDivContainer h3 {
+        font-size: 15px;
+    }
+
+    .contactUsDivContainer p {
+        font-size: 7px;
+    }
+}
