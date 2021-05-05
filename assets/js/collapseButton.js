@@ -4,7 +4,9 @@ const btnGroupDiv = document.getElementsByClassName('btnGroupDiv');
 
 btnCollapse.addEventListener("click", function () {
     if (btnCollapse.value === 'on') {
+        navLinkDiv[0].style.backgroundColor = '#FFFFFF';
         navLinkDiv[0].style.display = 'flex';
+        btnGroupDiv[0].style.backgroundColor = '#FFFFFF';
         btnGroupDiv[0].style.display = 'flex';
         btnCollapse.value = 'off'
     } else {
