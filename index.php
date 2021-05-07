@@ -22,7 +22,7 @@ include 'includes/common/Header.php';
 
 
 <?php
-include 'includes/common/Footer.php';
+include 'includes/common/Header.php';
 ?>
 <script src="assets/js/collapseButton.js"></script>
 </body>

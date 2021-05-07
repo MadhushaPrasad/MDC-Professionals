@@ -73,6 +73,8 @@
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    outline: none;
+    border: none;
 }
 
 /*button group styles*/
