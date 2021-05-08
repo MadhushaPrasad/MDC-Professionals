@@ -1,7 +1,9 @@
 .footer {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     /*background: #306DC6;*/
+    position: relative;
+    top: 100%;
     width: 100%;
     height: 75vh;
     font-family: 'Poppins';

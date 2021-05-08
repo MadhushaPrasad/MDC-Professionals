@@ -46,6 +46,35 @@ include 'includes/common/header.php';
     ?>
     <!--    search category end-->
 
+    <!--    biography div start-->
+    <div class="bioDiv">
+        <div class="imgDiv">
+            <img src="assets/images/whoWeAre.png" alt="Who we are">
+        </div>
+        <div class="infoDiv">
+            <p>
+                <small>Biography</small>
+            </p>
+            <h2>Who We Are</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+
+    <!--    biography div start-->
+    <!--    footer start-->
+    <?php
+    include 'includes/common/footer.php';
+    ?>
+    <!--    footer end-->
 </main>
 <script src="assets/js/collapseButton.js"></script>
 </body>
