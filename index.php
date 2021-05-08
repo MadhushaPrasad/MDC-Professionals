@@ -12,18 +12,41 @@
     <!--    custom css-->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/searchCategory.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <title>MDC | Home Page</title>
 </head>
 <body>
+<!--header-->
 <?php
-include 'includes/common/Header.php';
+include 'includes/common/header.php';
 ?>
 
+<!--main content-->
+<main>
+    <!--header image start-->
+    <div class="big-image">
+        <div class="overlay">
+            <h2>
+                You run your business. <br>
+                We’ll hanle your bookkeeping
+            </h2>
+            <p>
+                <small><b>
+                        Get a professional bookkeeper at a fraction of the cost of a<br>
+                        bookkeeping firm, and powerful online accounting software<br>
+                        with zero learning curve.</b></small>
+            </p>
+        </div>
+    </div>
+    <!--header image End-->
+    <!--    search category start-->
+    <?php
+    include 'includes/searchCategory.php';
+    ?>
+    <!--    search category end-->
 
-<?php
-include 'includes/common/Header.php';
-?>
+</main>
 <script src="assets/js/collapseButton.js"></script>
 </body>
 </html>
