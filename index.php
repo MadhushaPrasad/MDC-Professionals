@@ -70,6 +70,23 @@ include 'includes/common/header.php';
     </div>
 
     <!--    biography div start-->
+
+    <!--    biography div start-->
+    <div class="ouerServiceDiv">
+        <div class="ouerServiceHeaderDiv">
+            <p>
+                <small>Our Service</small>
+            </p>
+            <h2>What We Offer</h2>
+        </div>
+        <div class="serviceCardList">
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+    <!--    biography div start-->
+
     <!--    footer start-->
     <?php
     include 'includes/common/footer.php';
