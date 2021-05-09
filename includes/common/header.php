@@ -15,7 +15,7 @@
         </a>
         <a href="#">Find a job</a>
         <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+        <a href="/MDC-Professionals/pages/conatct-us.php">Contact Us</a>
     </div>
     <div class="btnGroupDiv">
         <button>Sign Up</button>
