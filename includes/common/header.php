@@ -3,7 +3,7 @@
         <img alt="logo" src="/MDC-Professionals/assets/images/small-logo.png">
     </div>
     <div class="navLinkDiv">
-        <a href="#">Home <br><span></span></a>
+        <a href="/MDC-Professionals/index.php">Home <br><span></span></a>
         <a href="#">
             <label>
                 <select>

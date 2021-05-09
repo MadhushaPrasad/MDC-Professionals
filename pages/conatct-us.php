@@ -27,6 +27,19 @@ include '../includes/common/header.php';
     <div class="contactUsMainDiv">
         <div class="ContactUsContentDiv">
             <h1>Contact Us</h1>
+            <form action="">
+                <div id="inputDiv">
+                    <div class="inputDiv">
+                        <input type="text" id="fName" name="firstName" placeholder="First Name">
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" id="lName" name="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <textarea>
+
+                </textarea>
+            </form>
         </div>
     </div>
     <!--    contact us content start-->
