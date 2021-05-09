@@ -24,7 +24,7 @@ main {
     position: absolute;
     top: 50px;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #ffffff;
 }
 
@@ -32,7 +32,6 @@ main {
     position: relative;
     width: 100%;
     height: 800px;
-    background-color: #151D41;
 }
 
 .ContactUsContentDiv {
@@ -44,7 +43,6 @@ main {
     margin: auto;
     width: 50%;
     height: 90%;
-    background-color: darkred;
 }
 
 #inputDiv {
@@ -55,16 +53,60 @@ main {
 }
 
 .inputDiv {
+    display: flex;
     width: 50%;
     height: 100px;
-    background-color: green;
-    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputDiv input {
     background-color: #ffffff;
     box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
     width: 90%;
-    height: 50px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-clip: padding-box;
+    padding: 0.250rem 0.40rem;
+    overflow: hidden;
+}
 
+.inputDiv input:focus {
+    padding-left: 35px;
+}
+
+::placeholder {
+    padding-left: 15px;
+}
+
+.ContactUsContentDiv form {
+    text-align: center;
+}
+
+.ContactUsContentDiv form textarea {
+    margin-top: 10px;
+    width: 80%;
+    height: 120px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+}
+
+.ContactUsContentDiv form button {
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(126, 118, 249, 0.702);
+    background: linear-gradient(to right, #6156F9, #1A129F);
 }
