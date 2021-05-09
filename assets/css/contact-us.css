@@ -42,7 +42,29 @@ main {
     left: 0;
     right: 0;
     margin: auto;
-    width: 90%;
+    width: 50%;
     height: 90%;
     background-color: darkred;
+}
+
+#inputDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.inputDiv {
+    width: 50%;
+    height: 100px;
+    background-color: green;
+    border: 2px solid black;
+}
+
+.inputDiv input {
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    width: 90%;
+    height: 50px;
+
 }
