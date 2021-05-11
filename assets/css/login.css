@@ -122,6 +122,15 @@ form .create_acc a:hover{
     flex-direction: row;
     justify-content: space-around;
 }
+
+.tik input[type="radio"] {
+    cursor: pointer;
+}
+
+.tik label {
+    cursor: pointer;
+}
+
 .img img{
 width: 400px;
 height: 400px;

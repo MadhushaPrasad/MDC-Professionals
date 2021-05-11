@@ -23,9 +23,9 @@
             <div class="text" >Login Form </div><br>
 
                 <div class="tik">
-                    <input type="radio" name="choose" id="seaker">Seaker
-                    <input type="radio" name="choose" id="provider">Provider
-                    <input type="radio" name="choose" id="admin">Admin
+                    <input type="radio" name="choose" id="seaker"><label for="seaker">Seaker</label>
+                    <input type="radio" name="choose" id="provider"><label for="provider">Provider</label>
+                    <input type="radio" name="choose" id="admin"><label for="admin">Admin</label>
                 </div>
 
             <form action="#">
