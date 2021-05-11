@@ -31,23 +31,24 @@ include '../includes/common/header.php';
             <form action="">
                 <div id="inputDiv">
                     <div class="inputDiv">
-                        <input type="text" id="fName" name="firstName" placeholder="First Name">
+                        <input type="text" id="fName" name="firstName" placeholder="First Name" required>
                     </div>
                     <div class="inputDiv">
-                        <input type="text" id="lName" name="lastName" placeholder="Last Name">
+                        <input type="text" id="lName" name="lastName" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div id="inputDiv">
                     <div class="inputDiv">
-                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="inputDiv">
-                        <input type="text" id="mNumber" name="mNumber" placeholder="Mobile Number">
+                        <input type="text" id="mNumber" name="mNumber" placeholder="Mobile Number" required>
                     </div>
                 </div>
-                <textarea>
-
-                </textarea>
+                <textarea name="message"
+                          id="message"
+                          placeholder="Message" required
+                ></textarea>
                 <br> <br>
                 <button type="submit">Send</button>
             </form>
@@ -59,6 +60,8 @@ include '../includes/common/header.php';
     include '../includes/common/footer.php';
     ?>
     <!--    footer end-->
+
+    <script src="assets/js/collapseButton.js"></script>
 </main>
 </body>
 </html>

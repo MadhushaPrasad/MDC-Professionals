@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -24,7 +28,7 @@ main {
     position: absolute;
     top: 50px;
     width: 100%;
-    height: 100%;
+    height: 45%;
     background-color: #ffffff;
 }
 
@@ -110,8 +114,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #046EAB;
-    opacity: 15%;
+    background-color: #DAE9F2;
 }
 
 .card {
@@ -121,6 +124,59 @@ main {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(126, 118, 249, 0.702);
     overflow: visible;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    width: 290px;
+    height: 420px;
+    overflow: hidden;
+    transition: 0.10s all;
+}
+
+.topDiv {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border-radius: 15px 15px 0 0;
+}
+
+.topDiv {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.topDiv img {
+    width: 185px;
+    height: 100px;
+}
+
+.info {
+    font-size: 12px;
+    font-family: 'Poppins Medium';
+    color: #42495B;
+}
+
+.info button {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 1px 10px #1A129F;
+    background: linear-gradient(to left, #6156F9, #1A129F);
+    text-transform: uppercase;
+    left: 75px;
+    top: 15px;
 }
 
 /*Our Service style end*/

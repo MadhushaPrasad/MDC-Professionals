@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    font-family: 'Poppins';
+    font-family: 'Poppins', "Semibold";
 }
 
 /*main content css*/
@@ -71,6 +71,7 @@ main {
     background-clip: padding-box;
     padding: 0.250rem 0.40rem;
     overflow: hidden;
+    color: #000000;
 }
 
 .inputDiv input:focus {
@@ -79,6 +80,8 @@ main {
 
 ::placeholder {
     padding-left: 15px;
+    color: #000000;
+    font-weight: bold;
 }
 
 .ContactUsContentDiv form {
@@ -94,6 +97,8 @@ main {
     border: none;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    color: #000000;
+    padding: 0.250rem 0.40rem;
 }
 
 .ContactUsContentDiv form button {
@@ -104,9 +109,10 @@ main {
     border: none;
     overflow: hidden;
     font-size: 20px;
-    font-family: 'Poppins';
     color: #ffffff;
     font-weight: bold;
     box-shadow: 0 3px 6px rgba(126, 118, 249, 0.702);
     background: linear-gradient(to right, #6156F9, #1A129F);
+
 }
+
