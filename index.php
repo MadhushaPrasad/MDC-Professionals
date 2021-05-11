@@ -132,6 +132,7 @@ include 'includes/common/header.php';
 </main>
 
 <script src="assets/js/collapseButton.js"></script>
+<script src="assets/js/header.js"></script>
 <script src="assets/js/circularProgressBar.js"></script>
 </body>
 </html>

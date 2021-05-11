@@ -18,8 +18,8 @@
         <a href="/MDC-Professionals/pages/conatct-us.php">Contact Us</a>
     </div>
     <div class="btnGroupDiv">
-        <button>Sign Up</button>
-        <button>Login</button>
+        <button id="btnSignUp">Sign Up</button>
+        <button id="btnLogin">Login</button>
     </div>
     <div class="collapeBtnDiv">
         <label for="toggle">&#9776;</label>
