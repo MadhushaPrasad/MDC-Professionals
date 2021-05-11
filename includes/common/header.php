@@ -13,7 +13,7 @@
                 </select>
             </label>
         </a>
-        <a href="#">Find a job</a>
+        <a href="/MDC-Professionals/pages/finding_job.php">Find a job</a>
         <a href="#">About Us</a>
         <a href="/MDC-Professionals/pages/conatct-us.php">Contact Us</a>
     </div>
