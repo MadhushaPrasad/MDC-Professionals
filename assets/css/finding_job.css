@@ -1,0 +1,89 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+}
+main {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 25%;
+    background-color: #ffffff;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    padding: 10px;
+    box-sizing: boder-box;
+    margin-top: 200px;   
+}
+
+.container .box{
+    position: relative;
+    background: #fff;
+    padding: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 2px solid silver;
+    box-shadow: 5px 10px 15px #888888;     
+}
+
+.container .box h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.container .box p{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.container .box .img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container .box .btn a{
+    position: relative;
+    display: inline-block;
+    padding: 6px 10px;
+    color: black;
+    left: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#1582d4,#aed9eb);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+}
