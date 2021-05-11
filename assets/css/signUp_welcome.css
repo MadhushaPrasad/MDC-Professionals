@@ -1,0 +1,67 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../MDC-Professionals/assets/images/signup_welcome_image.png");
+    background-size: cover;
+}
+
+body p {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+body h1:nth-child(2) {
+    position: absolute;
+    top: 48%;
+    bottom: 50%;
+    left: 48%;
+    right: 50%;
+    margin: auto;
+    text-transform: uppercase;
+    color: #F0BB11;
+    text-align: center;
+}
+
+body h1 {
+    position: absolute;
+    top: 60%;
+    bottom: 50%;
+    left: 42%;
+    margin: auto;
+    text-transform: uppercase;
+    color: #F0BB11;
+    text-align: center;
+}
+
+.btnGroupDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 65%;
+}
+
+.btnGroupDiv button {
+    width: 120px;
+    height: 40px;
+    box-shadow: 0 1px 10px #1A129F;
+    background: linear-gradient(to left, #6156F9, #1A129F);
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+/*main content css*/
