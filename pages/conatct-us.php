@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/contact-us.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/header-image.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 <body>
 <!--header start-->
@@ -36,13 +37,28 @@ include '../includes/common/header.php';
                         <input type="text" id="lName" name="lastName" placeholder="Last Name">
                     </div>
                 </div>
+                <div id="inputDiv">
+                    <div class="inputDiv">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" id="mNumber" name="mNumber" placeholder="Mobile Number">
+                    </div>
+                </div>
                 <textarea>
 
                 </textarea>
+                <br> <br>
+                <button type="submit">Send</button>
             </form>
         </div>
     </div>
     <!--    contact us content start-->
+    <!--    footer start-->
+    <?php
+    include '../includes/common/footer.php';
+    ?>
+    <!--    footer end-->
 </main>
 </body>
 </html>
