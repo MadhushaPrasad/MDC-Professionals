@@ -6,6 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MDC | Contact Us Page</title>
+
+    <!--    google font css-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="../assets/css/contact-us.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/header-image.css">
@@ -60,8 +66,8 @@ include '../includes/common/header.php';
     include '../includes/common/footer.php';
     ?>
     <!--    footer end-->
-
-    <script src="assets/js/collapseButton.js"></script>
+    <script src="../assets/js/collapseButton.js"></script>
+    <script src="../assets/js/header.js"></script>
 </main>
 </body>
 </html>

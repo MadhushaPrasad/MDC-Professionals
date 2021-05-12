@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -28,14 +32,13 @@ main {
 .container{
     width: 1200px;
     height: auto;
-    margin: 0 auto;
+    margin: 200px 0 0 80px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     grid-column-gap: 20px;
     grid-row-gap: 50px;
     padding: 10px;
-    box-sizing: boder-box;
-    margin-top: 200px;   
+    box-sizing: border-box;
 }
 
 .container .box{
@@ -45,15 +48,14 @@ main {
     text-align: center;
     overflow: hidden;
     border-radius: 30px;
-    border: 2px solid silver;
-    box-shadow: 5px 10px 15px #888888;     
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
 }
 
 .container .box h2{
     position: relative;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 20px;
     z-index: 1;
     text-transform: uppercase;
 }
@@ -76,14 +78,15 @@ main {
     position: relative;
     display: inline-block;
     padding: 6px 10px;
-    color: black;
-    left: 60px;
+    left: 90px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 40px;
-    background: linear-gradient(90deg,#1582d4,#aed9eb);
+    background: linear-gradient(90deg, #1A129F, #6156F9);
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    color: #ffffff;
+    font-weight: bold;
 }

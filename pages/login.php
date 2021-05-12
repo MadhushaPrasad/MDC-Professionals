@@ -2,11 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-
     <title>MDC | log in</title>
-    
     <link rel="stylesheet" href="../assets/css/login.css">
-    
 </head>
 
 <body>
