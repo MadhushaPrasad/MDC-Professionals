@@ -29,8 +29,7 @@
                     <div class="inner"></div>
                     <button type="submit"> Send</button>
                 </div>
-                
-               
+                               
             </form>
         </div>
     </div>
