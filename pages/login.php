@@ -33,7 +33,7 @@
                 <div class="data">
                     <input type="password" placeholder="Password" required>
                 </div>
-                <div class="forgot-pass"><a href="forgot_password අදාල ලින්ක් එක මෙතන ගහපන්">Forgot Password</a></div>
+                <div class="forgot-pass"><a href="forget_password.php">Forgot Password</a></div>
 
                 <div class="btn">
                     <div class="inner"></div>
