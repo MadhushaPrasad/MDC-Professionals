@@ -6,10 +6,14 @@
         <a href="/MDC-Professionals/index.php">Home <br><span></span></a>
         <a href="#">
             <label>
-                <select>
+                <select name="services" id="select-id" class="mySelect">
                     <option disabled selected value="0">Services</option>
-                    <option value="1">Job Seeker</option>
-                    <option value="2">Job Provider</option>
+                    <option data-url="/MDC-Professionals/pages/Job_seeker_service.php"
+                            value="1" id="opSeeker">Job Seeker
+                    </option>
+                    <option data-url="/MDC-Professionals/pages/Job_provider_service.php"
+                            value="2" id="opProvider">Job Provider
+                    </option>
                 </select>
             </label>
         </a>
