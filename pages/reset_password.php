@@ -38,8 +38,6 @@
                     <div class="inner"></div>
                     <button type="submit"> Reset</button>
                 </div>
-                
-               
             </form>
         </div>
     </div>

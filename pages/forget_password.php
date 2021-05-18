@@ -19,10 +19,10 @@
     
             <div class="text" >Forget Password </div><br>
 
-            <form action="../services/forget_password_service.php">
+            <form action="../services/forget_password_service.php" method="post">
 
                 <div class="data">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" name="email" required>
                 </div>
 
                 <div class="btn">

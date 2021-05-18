@@ -11,8 +11,7 @@
 
 /*header styles start*/
 
-.header {
-    position: absolute;
+#header {
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -20,6 +19,14 @@
     flex-direction: row;
     align-items: center;
     box-shadow: var(--primary-box-shadow);
+    z-index: 15;
+    background-color: var(--header-background-color);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /*logoDiv styles*/
@@ -124,7 +131,7 @@
 @media only screen and (max-width: 768px) {
 
     /*header styles start*/
-    .header {
+    #header {
         position: absolute;
         width: 100%;
         height: auto;

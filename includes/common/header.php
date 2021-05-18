@@ -1,4 +1,4 @@
-<header class="header">
+<header id="header">
     <div class="logoDiv">
         <img alt="logo" src="/MDC-Professionals/assets/images/small-logo.png">
     </div>
