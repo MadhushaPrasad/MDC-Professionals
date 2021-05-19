@@ -11,19 +11,19 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!--    custom css-->
     <link rel="stylesheet" href="../../assets/css/seekerHome.css">
-    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/seekerHeader.css">
     <link rel="stylesheet" href="../../assets/css/header-image.css">
-    <link rel="stylesheet" href="assets/css/searchCategory.css">
-    <link rel="stylesheet" href="assets/css/jobRate.css">
-    <link rel="stylesheet" href="assets/css/popular-company-list.css">
-    <link rel="stylesheet" href="assets/css/success-stories.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/searchCategory.css">
+    <link rel="stylesheet" href="../../assets/css/jobRate.css">
+    <link rel="stylesheet" href="../../assets/css/popular-company-list.css">
+    <link rel="stylesheet" href="../../assets/css/success-stories.css">
+    <link rel="stylesheet" href="../../assets/css/seekerFooter.css">
     <title>MDC | Seeker Home Page</title>
 </head>
 <body>
 <!--header start-->
 <?php
-include '../../includes/common/header.php';
+include '../../includes/common/seekerHeader.php';
 ?>
 <!--header end-->
 
@@ -70,9 +70,9 @@ include '../../includes/common/header.php';
     <div class="ouerServiceDiv">
         <div class="ouerServiceHeaderDiv">
             <p>
-                <small>Our Service</small>
+                <small>JOB SERVICES</small>
             </p>
-            <h2>What We Offer</h2>
+            <h2>Recent Jobs</h2>
         </div>
         <div class="serviceCardList">
             <div class="card">
@@ -108,31 +108,31 @@ include '../../includes/common/header.php';
 
     <!--    finding job rate start-->
     <?php
-    include 'includes/jobRate.php';
+    include '../../includes/jobRate.php';
     ?>
     <!--    finding job rate end-->
 
     <!--    POPULAR COMPANY LIST START-->
     <?php
-    include 'includes/popular-company-list.php';
+    include '../../includes/popular-company-list.php';
     ?>
     <!--    POPULAR COMPANY LIST END-->
 
     <!--    SUCCESS STORIES LIST START-->
     <?php
-    include 'includes/success-stories.php';
+    include '../../includes/success-stories.php';
     ?>
     <!--    SUCCESS STORIES LIST END-->
 
     <!--    footer start-->
     <?php
-    include 'includes/common/footer.php';
+    include '../../includes/common/seekerFooter.php';
     ?>
     <!--    footer end-->
 </main>
 
 <script src="../../assets/js/collapseButton.js"></script>
-<script src="../../assets/js/header.js"></script>
+<script src="../../assets/js/seekerHeader.js"></script>
 <script src="../../assets/js/circularProgressBar.js"></script>
 </body>
 </html>
