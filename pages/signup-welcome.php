@@ -18,8 +18,9 @@
 <h1>MDC</h1> <br>
 <h1>professionals</h1>
 <div class="btnGroupDiv">
-    <button>Job Seeker</button>
-    <button>Job Provider</button>
+    <button id="jobSeeker">Job Seeker</button>
+    <button id="jobProvider">Job Provider</button>
 </div>
+<script src="../assets/js/signUpWelcome.js"></script>
 </body>
 </html>

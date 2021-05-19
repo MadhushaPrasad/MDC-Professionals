@@ -109,13 +109,10 @@ form .create_acc{
 }
 
 form .create_acc a{
-    color: #3498db;
+    color: #000000;
     text-decoration: none;
 }
 
-form .create_acc a:hover{
-    text-decoration: underline;
-}
 .tik{
     text-align: center;
     display: flex;

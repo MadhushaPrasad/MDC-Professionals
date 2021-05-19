@@ -39,7 +39,8 @@
                     <div class="inner"></div>
                     <button type="submit"> Login</button>
                 </div>
-                <div class="create_acc">Don't You Have An Acoount ?<br><br><a href="Creat Acc අදාල ලින්ක් එක මෙතන ගහපන්">Create Account</a></div>
+                <div class="create_acc">Don't You Have An Acoount ?<br><br><a href="signup-welcome.php">Create
+                        Account</a></div>
 
             </form>
         </div>
