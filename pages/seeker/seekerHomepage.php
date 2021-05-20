@@ -75,32 +75,72 @@ include '../../includes/common/seekerHeader.php';
             <h2>Recent Jobs</h2>
         </div>
         <div class="serviceCardList">
-            <div class="card">
-                <div class="topDiv">
-                    <img src="../../assets/images/job_provider_large.png" alt="img">
+            <div class="box">
+                <div class="img">
+                    <img src="../../assets/images/job-card-image.png" alt="image">
                 </div>
-                <div class="info">
-                    <h4><b>JOB PROVIDER SERVICES</b></h4>
-                    <p>The job provider is the person who provides jobs from our website. The provider needs to register
-                        as a job provider on our website. Through our web site job providers can post their jobs and
-                        find job seekers, and also can download the CV. In addition we provide the job providers a
-                        contact service that helps the job providers to contact with the job seekers. </p>
-                    <button>see more</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="topDiv">
-                    <img src="../../assets/images/job_SeekerLarge.png" alt="img">
-                </div>
-                <div class="info">
-                    <h4><b>JOB SEEKER SERVICES</b></h4>
-                    <p>The job seeker is the person who searches for jobs from our website. The job seeker needs to
-                        login to the website. Through our web site job seekers can search any kind of a job and apply
-                        for the job , and also can upload a CV. In addition we provide the job seekers a contact service
-                        that helps the seeker to contact with the provider.</p>
-                    <button>see more</button>
+                <br>
+                <h2>Webflow Developer Needed</h2><br>
+                <p> Hello, i am lookimng for a webflow expert to work part time.
+                    At first, it will be small edits here & there, but lookong for a
+                    long term partnership as more projects come in.</p><br>
+
+                <div class="btn">
+                    <a href="#@#@#@">SEE MORE</a>
                 </div>
             </div>
+            <div class="box">
+                <div class="img">
+                    <img src="../../assets/images/job-card-image.png" alt="image">
+                </div>
+                <br>
+                <h2>Webflow Developer Needed</h2><br>
+                <p> Hello, i am lookimng for a webflow expert to work part time.
+                    At first, it will be small edits here & there, but lookong for a
+                    long term partnership as more projects come in.</p><br>
+
+                <div class="btn">
+                    <a href="#@#@#@">SEE MORE</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="../../assets/images/job-card-image.png" alt="image">
+                </div>
+                <br>
+                <h2>Webflow Developer Needed</h2><br>
+                <p> Hello, i am lookimng for a webflow expert to work part time.
+                    At first, it will be small edits here & there, but lookong for a
+                    long term partnership as more projects come in.</p><br>
+
+                <div class="btn">
+                    <a href="#@#@#@">SEE MORE</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="../../assets/images/job-card-image.png" alt="image">
+                </div>
+                <br>
+                <h2>Webflow Developer Needed</h2><br>
+                <p> Hello, i am lookimng for a webflow expert to work part time.
+                    At first, it will be small edits here & there, but lookong for a
+                    long term partnership as more projects come in.</p><br>
+
+                <div class="btn">
+                    <a href="#@#@#@">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">Prev</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">Next</a>
         </div>
     </div>
 
