@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MDC | JOB SEEKER SERVICE Page</title>
+    <title>MDC | Job Seeker Service page</title>
 
     <!--    google font css-->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -35,10 +35,18 @@
             <div class="SseriviceContent">
                 <h5>OUR SERVICES </h5>
                 <h1>Job Seeker</h1>
-                <p>The job seeker is the person who searches for jobs from our website.The job seeker needs to login to the website.
-                Through our web site job sekkers can search any kind of a job and apply for the job, and also can upload CV. 
-                In addition we provide the job seekers a contact service that helps the seeker to contact with the provider.
-                </p>
+                <p>Our assignment is the "Online Job Portal" which provides job opportunities through the Internet. Our website is called "MDC Professional".
+
+The primary objective of creating an online job portal is to give job seekers the opportunity to find a job that suits their qualifications as well as enable employers to find the people they want. That is, it gives job seekers the opportunity to look for a job in an easy way and employers to find suitable candidates.
+The job portal is designed to provide all types of jobs and different types of jobs. The main purpose of the job portal is to facilitate job seekers to get a job quickly. This is an attempt to minimize an applicant’s problems in finding the right job. So applicants can easily find jobs and employers can select suitable candidates.
+
+Users can register as employers and job seekers by providing the required information. Once the registration is complete, users can log in with the username and password provided.
+
+Job seekers are also provided with a job portal to submit their CV and apply for a job posting and the employee can select the best employees from the available CV based on their payment options. 
+
+And a provider is someone who does a great job with our site. The minimum qualification to become a provider is to have a company of his/her own. Having such a company allows him/her to work closely with our site. The role of a job provider is to recruit candidates for vacancies in their company. By recruiting such candidates, his/her needs will be met through our website.
+</p>
+                
 
             </div>
 
@@ -50,10 +58,17 @@
 
 
         <div class="seeker">
+    
             <p>
             The job seeker is the person who searches for jobs from our website.The job seeker needs to login to the website.
                 Through our web site job sekkers can search any kind of a job and apply for the job, and also can upload CV. 
-                In addition we provide the job seekers a contact service that helps the seeker to contact with the provider.
+                In addition we provide the job seekers a contact service that helps the seeker to contact with the provider.<br>
+            This site allows job seekers to register on the site, search for different jobs according to their qualifications and apply for those jobs easily. 
+            After the job seeker registers himself, resumes and fills in the profile provided by the administrator, he will find the job under various conditions 
+            and he can change his profile and resume and apply for the job based on different conditions. Job seekers can update information entered during registration as well as their skills sets.
+            When guest registered as a Job seeker, he/she can search job categories and view the details of jobs. And job seeker can apply for the job by uploading his/her CV and providing required information.  
+            Then job provider will go through the job seeker's application and will decide the approval. In the mean time job seeker should wait in a waiting list. If job seeker wants to find more details, 
+            they can contact the job provider. In addition to the job seeker can edit his own profile and the system will check the validity of the details he edited.
             </p>
         </div>
 
