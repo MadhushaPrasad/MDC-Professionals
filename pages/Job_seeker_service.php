@@ -31,24 +31,7 @@
         <!--    header images end-->
 
         <!--    job seeker service content start-->
-        <div class="SseriviceDivContainer">
-            <div class="SseriviceContent">
-                <h5>OUR SERVICES </h5>
-                <h1>Job Seeker</h1>
-                <p>Our assignment is the "Online Job Portal" which provides job opportunities through the Internet. Our website is called "MDC Professional".
-
-The primary objective of creating an online job portal is to give job seekers the opportunity to find a job that suits their qualifications as well as enable employers to find the people they want. That is, it gives job seekers the opportunity to look for a job in an easy way and employers to find suitable candidates.
-The job portal is designed to provide all types of jobs and different types of jobs. The main purpose of the job portal is to facilitate job seekers to get a job quickly. This is an attempt to minimize an applicant’s problems in finding the right job. So applicants can easily find jobs and employers can select suitable candidates.
-
-Users can register as employers and job seekers by providing the required information. Once the registration is complete, users can log in with the username and password provided.
-
-Job seekers are also provided with a job portal to submit their CV and apply for a job posting and the employee can select the best employees from the available CV based on their payment options. 
-
-And a provider is someone who does a great job with our site. The minimum qualification to become a provider is to have a company of his/her own. Having such a company allows him/her to work closely with our site. The role of a job provider is to recruit candidates for vacancies in their company. By recruiting such candidates, his/her needs will be met through our website.
-</p>
-                
-
-            </div>
+    <div>
 
             <div class="SseriviceImgDiv">
                 <img src="../assets/images/jbSeekerService.png" alt="JobSeekerService Image" id="jpsImg">
