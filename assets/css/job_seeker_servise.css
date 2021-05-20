@@ -23,101 +23,6 @@ body {
 }
 
 /*main content css*/
-
-main {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    height: 100%;
-    /*background-color: green;*/
-}
-
-.SseriviceDivContainer {
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Poppins', 'Medium';
-}
-
-.SseriviceContent {
-    width: 50%;
-    height: 100%;
-    margin-top: 150px;
-}
-
-
-.SseriviceContent h5{
-    margin-left: 50px;
-    margin-bottom: 0;
-}
-
-.SseriviceContent h1 {
-    margin: 0 0  0 50px;
-    font-family: 'Poppins', 'Medium';
-}
-
-.SseriviceContent p {
-    margin-left: 50px;
-    width: 80%;
-    text-align: left;
-}
-
-
-.SseriviceImgDiv {
-    width: 50%;
-    height: 100%;
-}
-
-#jpsImg {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 0;
-    right: 0;
-}
-
-
-.seeker{
-    width: 100%;
-    position: relative;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 600px;
-}
-
-.seeker p{
-    margin: 0 50px 0 50px;
-}html {
-    scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    background: white;
-    padding-right: 10px;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #053769;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    font-family: 'Poppins';
-}
-
-/*main content css*/
-
 main {
     position: absolute;
     top: 50px;
@@ -182,7 +87,7 @@ main {
     justify-content: center;
     align-items: center;
     top: 600px;
-    margin-top: 100px;
+    margin-top: 16%;
 }
 
 .seeker p{
