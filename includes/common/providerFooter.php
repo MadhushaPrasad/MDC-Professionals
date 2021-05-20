@@ -18,13 +18,20 @@
         <div class="qLinkDiv">
             <div class="qLinkDivContainer">
                 <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Finding a job</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
+                <div style="display: flex;flex-direction: row;justify-content: space-between;height: 100%">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Finding a job</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Create a Job</a></li>
+                        <li><a href="#">My Company</a></li>
+                        <li><a href="#"> Message</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="aboutUsDiv">

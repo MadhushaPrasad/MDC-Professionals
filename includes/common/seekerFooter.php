@@ -26,7 +26,7 @@
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">About Us</a></li>
                     </ul>
-                    <ul>
+                    <ul style="text-align: right;">
                         <li><a href="#">My Jobs</a></li>
                         <li><a href="#"> Message</a></li>
                     </ul>

@@ -5,7 +5,7 @@
     position: relative;
     top: 100%;
     width: 100%;
-    height: 75vh;
+    height: 88.9vh;
     font-family: 'Poppins';
 }
 
@@ -59,20 +59,20 @@
 }
 
 .qLinkDivContainer {
-    width: 40%;
+    width: 65%;
     height: 300px;
 }
 
-.qLinkDivContainer ul {
+.qLinkDivContainer div ul {
     padding: 0;
 }
 
-.qLinkDivContainer ul li {
+.qLinkDivContainer div ul li {
     list-style: none;
     padding: 10px 0 10px 0;
 }
 
-.qLinkDivContainer ul li a {
+.qLinkDivContainer div ul li a {
     text-decoration: none;
     color: #151D41;
 }
@@ -126,12 +126,12 @@
         font-size: 15px;
     }
 
-    .qLinkDivContainer ul li {
+    .qLinkDivContainer div ul li {
         list-style: none;
         padding: 2px 0 2px 0;
     }
 
-    .qLinkDivContainer ul li a {
+    .qLinkDivContainer div ul li a {
         font-size: 10px;
     }
 

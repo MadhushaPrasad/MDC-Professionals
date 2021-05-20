@@ -1,0 +1,200 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+}
+
+/*main content css*/
+
+main {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 45%;
+    background-color: #ffffff;
+}
+
+/*biography style start*/
+.bioDiv {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bioDiv .imgDiv {
+    width: 50%;
+    height: 80%;
+    opacity: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bioDiv .imgDiv img {
+    width: 450px;
+    height: 100%;
+    opacity: 95%;
+}
+
+.bioDiv .infoDiv {
+    width: 50%;
+    height: 100%;
+    opacity: 95%;
+}
+
+.bioDiv .infoDiv p:nth-child(1) {
+    /*margin: 0;*/
+    color: #046EAB;
+}
+
+.bioDiv .infoDiv h2 {
+    margin: 8px 0 0 0;
+    color: #103C55;
+}
+
+.bioDiv .infoDiv p:nth-child(3) {
+    width: 75%;
+    margin-top: 60px;
+}
+
+/*biography style start*/
+
+
+/*Our Service style start*/
+.ouerServiceDiv {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ouerServiceHeaderDiv {
+    width: 100%;
+}
+
+.ouerServiceHeaderDiv p {
+    color: #046EAB;
+    padding-left: 40px;
+}
+
+.ouerServiceHeaderDiv h2 {
+    color: #103C55;
+    padding-left: 40px;
+}
+
+.serviceCardList {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DAE9F2;
+}
+
+.serviceCardList .box {
+    position: relative;
+    width: 300px;
+    background: #fff;
+    padding: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+}
+
+.serviceCardList .box h2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.serviceCardList .box p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.serviceCardList .box .img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serviceCardList .box .btn a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 10px;
+    left: 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #1A129F, #6156F9);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.pagination {
+    position: absolute;
+    left: 32%;
+    bottom: 30px;
+    display: inline-block;
+}
+
+.pagination a {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.702);
+    border-radius: 10px;
+    background-color: #F0BB11;
+    color: #ffffff;
+}
+
+.pagination a.active {
+    background-color: #F0BB11;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/*Our Service style end*/
