@@ -1,0 +1,30 @@
+.adminDashboardContent {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.countRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.countCard {
+    width: 210px;
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    text-align: center;
+}
+
+.countCard h4:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.countCard h4:nth-child(2) {
+    margin-top: 10px;
+}
