@@ -1,0 +1,12 @@
+.adminFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color: #6156F9;
+}
+
+.adminFooter p {
+    margin: 10px 0 10px 0;
+}

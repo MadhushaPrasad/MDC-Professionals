@@ -59,12 +59,12 @@ form .forgot-pass{
 }
 
 form .forgot-pass a{
-    color: #3498db;
+    color: #000000;
     text-decoration: none;
 }
 
 form .forgot-pass a:hover{
-    text-decoration: underline;
+    color: red;
 }
 
 form .btn{

@@ -1,0 +1,35 @@
+.sideMenu {
+    position: fixed;
+    width: fit-content;
+    top: 0;
+    margin-top: 65px;
+    bottom: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.161);
+}
+
+.active {
+    background-color: #7E76F9;
+    font-weight: bold;
+    font-size: 20px !important;
+    color: #ffffff !important;
+}
+
+.sideMenu a {
+    width: 115px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.sideMenu a:hover {
+    background-color: #7E76F9;
+    color: #ffffff !important;
+}
