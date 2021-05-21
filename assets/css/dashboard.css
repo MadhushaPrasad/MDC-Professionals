@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+}
+
+main {
+    position: absolute;
+    width: 84.20%;
+    height: 100%;
+    top: 65px;
+    left: 215px;
+    bottom: 45px;
+    background-color: #ffffff;
+    z-index: -5;
+}
