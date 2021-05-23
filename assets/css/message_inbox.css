@@ -1,0 +1,111 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+}
+
+/*main content css*/
+
+main {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 45%;
+    background-color: #ffffff;
+}
+.msgcontainer{
+    width: 70%;
+    height: auto;
+}
+.msgcontainer div div span{
+    position: relative;
+    width: 160px;
+    height: 5px;
+    display: flex;
+    border-radius: 600px;
+    background-color: rgba(240, 187, 17, 1);
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    
+}
+.inbox{
+    position: absolute;
+    margin: 0;
+    width: 85%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    align-items: center;
+}
+
+.msg{
+    position: relative;
+    margin-top: 2px;
+    width:40%;
+    height: 100px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+}
+
+.msgmine{
+    position: relative;
+    left: 59%;
+    width: 40%;
+    height: 100px;
+    background-color: #ffffff;
+    padding: 5px;
+    
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+}
+
+.typeDiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    margin: 0;
+}
+.typeDiv textarea{
+    
+    width:95%;
+    height: 50px;
+    padding:0;
+    margin:0;
+}
+.typeDiv button{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin-left: 16px;
+}
