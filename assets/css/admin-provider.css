@@ -1,0 +1,205 @@
+#providerContainer {
+    padding-bottom: 170px;
+    font-family: 'Poppins';
+    padding-left: 54px;
+}
+
+.providerSectionHeader {
+    margin-bottom: 50px;
+}
+
+#providerContainer .providerSectionHeader span {
+    width: 180px !important;
+    height: 5px !important;
+    background: rgba(240, 187, 17, 1) !important;
+    border-radius: 600px !important;
+    top: 13% !important;
+    left: 5% !important;
+}
+
+.providerFormDivContainer {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.providerProfileDivContainer {
+    width: 70%;
+    height: 50%;
+    margin-left: 36%;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.providerSearchDiv {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#providerProfile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 50px 0 0 0;
+}
+
+#providerContainer input[type="text"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#providerContainer input[type="text"]:focus {
+    outline: none;
+}
+
+#providerContainer input[type="password"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#providerContainer input[type="password"]:focus {
+    outline: none;
+}
+
+#providerContainer input[type="email"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#providerContainer input[type="email"]:focus {
+    outline: none;
+}
+
+#providerProfilePic {
+    background-color: #ffffff;
+    height: 35px !important;
+    padding-left: 16px !important;
+    width: 60px !important;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#providerBtnRemove {
+    background-color: #ffffff;
+    height: 35px;
+    width: 83px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-weight: bold;
+}
+
+.providerButtonGroup {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#providerBtnSubmit {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+#providerBtnUpdate {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#providerBtnCancel {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#pBtnSearch {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+textarea {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 100px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.ProviderTableDiv {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+}

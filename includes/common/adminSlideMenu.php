@@ -1,8 +1,8 @@
 <div class="sideMenu">
-    <a href="#">Dashboard</a>
-    <a class="active" href="#">Job Seeker</a>
-    <a href="#">Job Provider</a>
-    <a href="#">Company</a>
-    <a href="#">Job</a>
-    <a href="#">Category</a>
+    <a href="#" id="dashboardLink">Dashboard</a>
+    <a id="jobSeekerLink" href="#">Job Seeker</a>
+    <a href="#" id="jobProviderLink">Job Provider</a>
+    <a href="#" id="companyLink">Company</a>
+    <a href="#" id="jobLink">Job</a>
+    <a href="#" id="categoryLink">Category</a>
 </div>

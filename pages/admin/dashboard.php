@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/adminHeader.css">
     <link rel="stylesheet" href="../../assets/css/adminSlideMenu.css">
-    <link rel="stylesheet" href="../../assets/css/dashboardCountCards.css">
     <link rel="stylesheet" href="../../assets/css/dashboard-content.css">
+    <link rel="stylesheet" href="../../assets/css/admin-seeker.css">
+    <link rel="stylesheet" href="../../assets/css/admin-provider.css">
     <link rel="stylesheet" href="../../assets/css/adminFooter.css">
 </head>
 <body>
@@ -30,22 +31,33 @@ include '../../includes/common/adminSlideMenu.php';
 ?>
 <!--slide menu end-->
 <main>
-    <!--Count Cards start-->
-    <?php
-    include '../../includes/admin/dashboardCountCards.php';
-    ?>
-    <!--Count Cards end-->
+
     <!--content start-->
     <?php
     include '../../includes/admin/dashboard-content.php';
     ?>
     <!--content menu end-->
+
+    <!--seeker start-->
+    <?php
+    include '../../includes/admin/admin-seeker.php';
+    ?>
+    <!--seeker end-->
+
+    <!--provider start-->
+    <?php
+    include '../../includes/admin/admin-provider.php';
+    ?>
+    <!--provider end-->
+
 </main>
 <!--slide menu start-->
 <?php
 include '../../includes/common/adminFooter.php';
 ?>
 <!--slide menu end-->
-
+<script src="../../assets/js/adminSideMenu.js"></script>
+<script src="../../assets/js/adminSeeker.js"></script>
+<script src="../../assets/js/adminProvider.js"></script>
 </body>
 </html>
