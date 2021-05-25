@@ -116,7 +116,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Job Seeker</h1>
                 <span style="width: 280px"></span>
-                <button title="new Job Seeker"><i class="fa fa-plus"></i></button>
+                <button title="new Job Seeker" id="btnNewJobSeeker"><i class="fa fa-plus"></i></button>
             </div>
             <table border="1" class="table-responsive">
                 <thead>
@@ -156,7 +156,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Job Providers</h1>
                 <span></span>
-                <button title="New Job Provider"><i class="fa fa-plus"></i></button>
+                <button title="New Job Provider" id="btnNewjobProvider"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
@@ -198,7 +198,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Company</h1>
                 <span style="width: 270px"></span>
-                <button title="New Job Company"><i class="fa fa-plus"></i></button>
+                <button title="New Job Company" id="btnNewcompany"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
@@ -240,7 +240,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Jobs</h1>
                 <span style="width: 180px"></span>
-                <button title="New Job"><i class="fa fa-plus"></i></button>
+                <button title="New Job" id="btnNewjob"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">

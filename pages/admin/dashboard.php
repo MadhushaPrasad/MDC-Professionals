@@ -85,5 +85,6 @@ include '../../includes/common/adminFooter.php';
 ?>
 <!--slide menu end-->
 <script src="../../assets/js/adminSideMenu.js"></script>
+<script src="../../assets/js/dashboard-content.js"></script>
 </body>
 </html>
