@@ -11,6 +11,7 @@ const providerContainer = document.getElementById('providerContainer');
 const companyContainer = document.getElementById('companyContainer');
 const jobContainer = document.getElementById('jobContainer');
 const categoryContainer = document.getElementById('categoryContainer');
+const profileContainer = document.getElementById('profileContainer');
 
 
 //load window onload content only
@@ -22,6 +23,7 @@ window.onload = function () {
     companyContainer.style.display = "none";
     jobContainer.style.display = "none";
     categoryContainer.style.display = "none";
+    profileContainer.style.display = "none";
 };
 
 //load dashboard content only
@@ -33,11 +35,14 @@ dashboardLink.addEventListener('click', function () {
     jobContainer.style.display = "none";
     categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
+    profileContainer.style.display = "none";
 
     dashboardLink.classList.add("active");
     jobSeekerLink.classList.remove("active");
     jobProviderLink.classList.remove("active");
     companyLink.classList.remove("active");
+    jobLink.classList.remove("active");
+    categoryLink.classList.remove("active");
 });
 
 
@@ -50,11 +55,14 @@ jobSeekerLink.addEventListener('click', function () {
     categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
     seekerContainer.style.display = "block";
+    profileContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobProviderLink.classList.remove("active");
     companyLink.classList.remove("active");
     jobSeekerLink.classList.add("active");
+    categoryLink.classList.remove("active");
+    jobLink.classList.remove("active");
 });
 
 //load job provider content only
@@ -65,10 +73,13 @@ jobProviderLink.addEventListener('click', function () {
     categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
     providerContainer.style.display = "block";
+    profileContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
     companyLink.classList.remove("active");
+    categoryLink.classList.remove("active");
+    jobLink.classList.remove("active");
     jobProviderLink.classList.add("active");
 });
 
@@ -80,6 +91,7 @@ companyLink.addEventListener('click', function () {
     jobContainer.style.display = "none";
     categoryContainer.style.display = "none";
     companyContainer.style.display = "block";
+    profileContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
@@ -97,6 +109,7 @@ jobLink.addEventListener('click', function () {
     companyContainer.style.display = "none";
     categoryContainer.style.display = "none";
     jobContainer.style.display = "block";
+    profileContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
@@ -115,6 +128,7 @@ categoryLink.addEventListener('click', function () {
     companyContainer.style.display = "none";
     jobContainer.style.display = "none";
     categoryContainer.style.display = "block";
+    profileContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");

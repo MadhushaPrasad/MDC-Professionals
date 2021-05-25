@@ -1,4 +1,5 @@
 const profilePicFeild = document.getElementById('seekerProfilePic');
+const seekerBtnRemove = document.getElementById('seekerBtnRemove');
 
 profilePicFeild.addEventListener('change', function () {
     const file = document.getElementById("seekerProfilePic").files;
@@ -19,4 +20,9 @@ profilePicFeild.addEventListener('change', function () {
     } catch (err) {
         console.log("Error", "You cant upload a image \n without select", "error");
     }
+});
+
+seekerBtnRemove.addEventListener('click', function () {
+    document.getElementById("seekerProfileSeeker").setAttribute("src", '/MDC-Professionals/' +
+        'assets/images/avatar-profile-picture.jpg');
 });

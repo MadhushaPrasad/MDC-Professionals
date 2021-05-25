@@ -10,7 +10,7 @@
                 <img id="messageIc" src="../../assets/images/conversation.png" alt="message-icon">
             </div>
         </a>
-        <a id="profile" href="">
+        <a id="profile">
             <div id="profileCircle">
 
             </div>

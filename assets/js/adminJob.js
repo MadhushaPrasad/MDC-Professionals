@@ -1,4 +1,5 @@
 const jobProfilePicFeild = document.getElementById('jobProfilePic');
+const jobBtnRemove = document.getElementById('jobBtnRemove');
 
 jobProfilePicFeild.addEventListener('change', function () {
     const file = document.getElementById("jobProfilePic").files;
@@ -19,4 +20,9 @@ jobProfilePicFeild.addEventListener('change', function () {
     } catch (err) {
         console.log("Error", "You cant upload a image \n without select", "error");
     }
+});
+
+jobBtnRemove.addEventListener('click', function () {
+    document.getElementById("jobProfile").setAttribute("src", '/MDC-Professionals/' +
+        'assets/images/portfolio.png');
 });

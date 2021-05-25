@@ -13,6 +13,7 @@
     <!--    custom css-->
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/adminHeader.css">
+    <link rel="stylesheet" href="../../assets/css/admin-profile.css">
     <link rel="stylesheet" href="../../assets/css/adminSlideMenu.css">
     <link rel="stylesheet" href="../../assets/css/dashboard-content.css">
     <link rel="stylesheet" href="../../assets/css/admin-seeker.css">
@@ -70,6 +71,12 @@ include '../../includes/common/adminSlideMenu.php';
     include '../../includes/admin/admin-category.php';
     ?>
     <!--job end-->
+
+    <!--profile start-->
+    <?php
+    include '../../includes/admin/admin-profile.php';
+    ?>
+    <!--profile end-->
 
 </main>
 <!--slide menu start-->

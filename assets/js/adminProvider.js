@@ -1,4 +1,5 @@
 const providerProfilePicFeild = document.getElementById('providerProfilePic');
+const providerBtnRemove = document.getElementById('providerBtnRemove');
 
 providerProfilePicFeild.addEventListener('change', function () {
     const file = document.getElementById("providerProfilePic").files;
@@ -19,4 +20,9 @@ providerProfilePicFeild.addEventListener('change', function () {
     } catch (err) {
         console.log("Error", "You cant upload a image \n without select", "error");
     }
+});
+
+providerBtnRemove.addEventListener('click', function () {
+    document.getElementById("providerProfile").setAttribute("src", '/MDC-Professionals/' +
+        'assets/images/avatar-profile-picture.jpg');
 });
