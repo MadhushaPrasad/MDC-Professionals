@@ -11,14 +11,6 @@
     align-items: center;
     box-shadow: 0 3px 15px rgba(126, 118, 249, 0.161);
 }
-
-.active {
-    background-color: #7E76F9;
-    font-weight: bold;
-    font-size: 20px !important;
-    color: #ffffff !important;
-}
-
 .sideMenu a {
     width: 115px;
     height: 30px;

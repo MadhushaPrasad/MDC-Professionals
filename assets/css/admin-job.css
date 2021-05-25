@@ -1,0 +1,230 @@
+#jobContainer {
+    padding-bottom: 170px;
+    padding-left: 54px;
+    overflow-x: scroll !important;
+    overflow-y: scroll;
+}
+
+.jobSectionHeader {
+    margin-bottom: 50px;
+}
+
+#jobContainer .jobSectionHeader span {
+    width: 53px !important;
+    height: 5px !important;
+    background: rgba(240, 187, 17, 1) !important;
+    border-radius: 600px !important;
+    top: 13% !important;
+    left: 5% !important;
+}
+
+.jobFormDivContainer {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.jobProfileDivContainer {
+    width: 70%;
+    height: 50%;
+    margin-left: 36%;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.jobSearchDiv {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#jobProfile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 50px 0 0 0;
+}
+
+#jobContainer input[type="text"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#jobContainer input[type="text"]:focus {
+    outline: none;
+}
+
+#jobContainer input[type="password"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#jobContainer input[type="password"]:focus {
+    outline: none;
+}
+
+#jobContainer input[type="email"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#jobContainer input[type="email"]:focus {
+    outline: none;
+}
+
+#jobProfilePic {
+    background-color: #ffffff;
+    height: 35px !important;
+    padding-left: 16px !important;
+    width: 60px !important;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#jobBtnRemove {
+    background-color: #ffffff;
+    height: 35px;
+    width: 83px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-weight: bold;
+}
+
+.jobButtonGroup {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#jobBtnSubmit {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+#jobBtnUpdate {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#jobBtnCancel {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#jobBtnSearch {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+textarea {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 100px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.jobTableDiv {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+    padding-right: 80px;
+}
+
+.jobTableDiv span {
+    width: 155px !important;
+    height: 5px !important;
+    background: rgba(240, 187, 17, 1) !important;
+    border-radius: 600px !important;
+    top: 17%;
+}
+
+#jobContainer select {
+    background-color: #ffffff;
+    padding: 0 20px 0 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#jobContainer select :focus {
+    outline: none;
+}

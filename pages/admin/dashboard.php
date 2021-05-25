@@ -6,10 +6,20 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MDC | Admin Dashboard</title>
+    <!--    google font css-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--    custom css-->
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/adminHeader.css">
     <link rel="stylesheet" href="../../assets/css/adminSlideMenu.css">
     <link rel="stylesheet" href="../../assets/css/dashboard-content.css">
+    <link rel="stylesheet" href="../../assets/css/admin-seeker.css">
+    <link rel="stylesheet" href="../../assets/css/admin-provider.css">
+    <link rel="stylesheet" href="../../assets/css/admin-company.css">
+    <link rel="stylesheet" href="../../assets/css/admin-job.css">
+    <link rel="stylesheet" href="../../assets/css/admin-category.css">
     <link rel="stylesheet" href="../../assets/css/adminFooter.css">
 </head>
 <body>
@@ -24,112 +34,49 @@ include '../../includes/common/adminSlideMenu.php';
 ?>
 <!--slide menu end-->
 <main>
-    <!--slide menu start-->
+
+    <!--content start-->
     <?php
     include '../../includes/admin/dashboard-content.php';
     ?>
-    <!--slide menu end-->
+    <!--content menu end-->
 
-    <!--slide menu start-->
-    <div style="display: flex;flex-direction: row;width: 100%">
-        <!--    finding job rate start-->
-        <div class="companyDiv">
-            <h1>POPULAR COMPANY LIST</h1>
-            <span></span>
-            <div class="companyList">
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
+    <!--seeker start-->
+    <?php
+    include '../../includes/admin/admin-seeker.php';
+    ?>
+    <!--seeker end-->
 
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
+    <!--provider start-->
+    <?php
+    include '../../includes/admin/admin-provider.php';
+    ?>
+    <!--provider end-->
 
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
+    <!--provider start-->
+    <?php
+    include '../../includes/admin/admin-company.php';
+    ?>
+    <!--provider end-->
 
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <!--job start-->
+    <?php
+    include '../../includes/admin/admin-job.php';
+    ?>
+    <!--job end-->
 
-            <div class="companyList">
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
+    <!--job start-->
+    <?php
+    include '../../includes/admin/admin-category.php';
+    ?>
+    <!--job end-->
 
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum.</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="comInfoDiv">
-                    <img src="/MDC-Professionals/assets/images/company-icon.png" alt="company" width="60" height="60">
-                    <div class="comNameInfo">
-                        <p style="margin-top: 0;">Lorem Ipsum</p>
-                        <p>
-                            <small>1.2.P.M</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!--    finding job rate end-->
-    </div>
-    <!--slide menu end-->
 </main>
 <!--slide menu start-->
 <?php
 include '../../includes/common/adminFooter.php';
 ?>
 <!--slide menu end-->
-
+<script src="../../assets/js/adminSideMenu.js"></script>
 </body>
 </html>
