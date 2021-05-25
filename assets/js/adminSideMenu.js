@@ -10,6 +10,7 @@ const seekerContainer = document.getElementById('seekerContainer');
 const providerContainer = document.getElementById('providerContainer');
 const companyContainer = document.getElementById('companyContainer');
 const jobContainer = document.getElementById('jobContainer');
+const categoryContainer = document.getElementById('categoryContainer');
 
 
 //load window onload content only
@@ -20,6 +21,7 @@ window.onload = function () {
     providerContainer.style.display = "none";
     companyContainer.style.display = "none";
     jobContainer.style.display = "none";
+    categoryContainer.style.display = "none";
 };
 
 //load dashboard content only
@@ -90,5 +92,23 @@ jobLink.addEventListener('click', function () {
     jobProviderLink.classList.remove("active");
     companyLink.classList.remove("active");
     jobLink.classList.add("active");
+});
+
+
+//load Category content only
+categoryLink.addEventListener('click', function () {
+    dashboard.style.display = "none";
+    seekerContainer.style.display = "none";
+    providerContainer.style.display = "none";
+    companyContainer.style.display = "none";
+    jobContainer.style.display = "none";
+    categoryContainer.style.display = "block";
+
+    dashboardLink.classList.remove("active");
+    jobSeekerLink.classList.remove("active");
+    jobProviderLink.classList.remove("active");
+    companyLink.classList.remove("active");
+    jobLink.classList.remove("active");
+    categoryLink.classList.add("active");
 });
 
