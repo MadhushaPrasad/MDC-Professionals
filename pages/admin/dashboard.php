@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../assets/css/admin-provider.css">
     <link rel="stylesheet" href="../../assets/css/admin-company.css">
     <link rel="stylesheet" href="../../assets/css/admin-job.css">
+    <link rel="stylesheet" href="../../assets/css/admin-category.css">
     <link rel="stylesheet" href="../../assets/css/adminFooter.css">
 </head>
 <body>
@@ -61,6 +62,12 @@ include '../../includes/common/adminSlideMenu.php';
     <!--job start-->
     <?php
     include '../../includes/admin/admin-job.php';
+    ?>
+    <!--job end-->
+
+    <!--job start-->
+    <?php
+    include '../../includes/admin/admin-category.php';
     ?>
     <!--job end-->
 

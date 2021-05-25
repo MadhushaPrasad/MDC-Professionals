@@ -131,4 +131,5 @@ span {
     background-color: #ffffff;
     border-color: #eeeeee;
     cursor: pointer;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
 }

@@ -30,6 +30,8 @@ dashboardLink.addEventListener('click', function () {
     dashboard.style.display = "block";
     seekerContainer.style.display = "none";
     providerContainer.style.display = "none";
+    jobContainer.style.display = "none";
+    categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
 
     dashboardLink.classList.add("active");
@@ -44,6 +46,8 @@ jobSeekerLink.addEventListener('click', function () {
 
     dashboard.style.display = "none";
     providerContainer.style.display = "none";
+    jobContainer.style.display = "none";
+    categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
     seekerContainer.style.display = "block";
 
@@ -57,6 +61,8 @@ jobSeekerLink.addEventListener('click', function () {
 jobProviderLink.addEventListener('click', function () {
     dashboard.style.display = "none";
     seekerContainer.style.display = "none";
+    jobContainer.style.display = "none";
+    categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
     providerContainer.style.display = "block";
 
@@ -71,11 +77,15 @@ companyLink.addEventListener('click', function () {
     dashboard.style.display = "none";
     seekerContainer.style.display = "none";
     providerContainer.style.display = "none";
+    jobContainer.style.display = "none";
+    categoryContainer.style.display = "none";
     companyContainer.style.display = "block";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
     jobProviderLink.classList.remove("active");
+    jobLink.classList.remove("active");
+    categoryLink.classList.remove("active");
     companyLink.classList.add("active");
 });
 
@@ -85,12 +95,14 @@ jobLink.addEventListener('click', function () {
     seekerContainer.style.display = "none";
     providerContainer.style.display = "none";
     companyContainer.style.display = "none";
+    categoryContainer.style.display = "none";
     jobContainer.style.display = "block";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
     jobProviderLink.classList.remove("active");
     companyLink.classList.remove("active");
+    categoryLink.classList.remove("active");
     jobLink.classList.add("active");
 });
 

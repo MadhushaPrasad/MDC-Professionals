@@ -1,0 +1,148 @@
+#categoryContainer {
+    padding-bottom: 170px;
+    padding-left: 54px;
+    overflow-x: scroll !important;
+    overflow-y: scroll;
+}
+
+.categorySectionHeader {
+    margin-bottom: 50px;
+}
+
+#categoryContainer .categorySectionHeader span {
+    width: 150px !important;
+    height: 5px !important;
+    background: rgba(240, 187, 17, 1) !important;
+    border-radius: 600px !important;
+    top: 13% !important;
+    left: 5% !important;
+}
+
+.categoryFormDivContainer {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.categoryProfileDivContainer {
+    width: 70%;
+    height: 50%;
+    margin-left: 36%;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.categorySearchDiv {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#categoryContainer input[type="text"] {
+    background-color: #ffffff;
+    padding-left: 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#categoryContainer input[type="text"]:focus {
+    outline: none;
+}
+
+
+.categoryButtonGroup {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#categoryBtnSubmit {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+#categoryBtnUpdate {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#categoryBtnCancel {
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#categoryBtnSearch {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    padding: 0 16px 0 16px;
+    background: linear-gradient(to right, #6156F9, #1A129F);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.categoryTableDiv {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+    padding-right: 80px;
+}
+
+.categoryTableDiv span {
+    width: 250px !important;
+    height: 5px !important;
+    background: rgba(240, 187, 17, 1) !important;
+    border-radius: 600px !important;
+    top: 17%;
+}
+
+#newSubCategory {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border-color: #eeeeee;
+    cursor: pointer;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    margin-left: 80px;
+}
