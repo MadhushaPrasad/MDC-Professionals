@@ -1,16 +1,16 @@
-#providerContainer {
+#companyContainer {
     padding-bottom: 170px;
     padding-left: 54px;
-    overflow-x: scroll;
+    overflow-x: scroll !important;
     overflow-y: scroll;
 }
 
-.providerSectionHeader {
+.companySectionHeader {
     margin-bottom: 50px;
 }
 
-#providerContainer .providerSectionHeader span {
-    width: 180px !important;
+#companyContainer .companySectionHeader span {
+    width: 150px !important;
     height: 5px !important;
     background: rgba(240, 187, 17, 1) !important;
     border-radius: 600px !important;
@@ -18,7 +18,7 @@
     left: 5% !important;
 }
 
-.providerFormDivContainer {
+.companyFormDivContainer {
     width: 70%;
     height: 50%;
     position: relative;
@@ -29,7 +29,7 @@
     margin: auto;
 }
 
-.providerProfileDivContainer {
+.companyProfileDivContainer {
     width: 70%;
     height: 50%;
     margin-left: 36%;
@@ -37,7 +37,7 @@
     margin-bottom: 30px;
 }
 
-.providerSearchDiv {
+.companySearchDiv {
     width: 100%;
     height: 60px;
     display: flex;
@@ -45,7 +45,7 @@
     flex-direction: row;
 }
 
-#providerProfile {
+#companyProfile {
     position: relative;
     width: 200px;
     height: 200px;
@@ -57,7 +57,7 @@
     margin: 50px 0 0 0;
 }
 
-#providerContainer input[type="text"] {
+#companyContainer input[type="text"] {
     background-color: #ffffff;
     padding-left: 20px;
     height: 35px;
@@ -68,11 +68,11 @@
     margin: 12px;
 }
 
-#providerContainer input[type="text"]:focus {
+#companyContainer input[type="text"]:focus {
     outline: none;
 }
 
-#providerContainer input[type="password"] {
+#companyContainer input[type="password"] {
     background-color: #ffffff;
     padding-left: 20px;
     height: 35px;
@@ -83,11 +83,11 @@
     margin: 12px;
 }
 
-#providerContainer input[type="password"]:focus {
+#companyContainer input[type="password"]:focus {
     outline: none;
 }
 
-#providerContainer input[type="email"] {
+#companyContainer input[type="email"] {
     background-color: #ffffff;
     padding-left: 20px;
     height: 35px;
@@ -98,11 +98,11 @@
     margin: 12px;
 }
 
-#providerContainer input[type="email"]:focus {
+#companyContainer input[type="email"]:focus {
     outline: none;
 }
 
-#providerProfilePic {
+#companyProfilePic {
     background-color: #ffffff;
     height: 35px !important;
     padding-left: 16px !important;
@@ -113,7 +113,7 @@
     margin: 12px;
 }
 
-#providerBtnRemove {
+#companyBtnRemove {
     background-color: #ffffff;
     height: 35px;
     width: 83px;
@@ -124,7 +124,7 @@
     font-weight: bold;
 }
 
-.providerButtonGroup {
+.companyButtonGroup {
     display: flex;
     height: 60px;
     flex-direction: row;
@@ -133,7 +133,7 @@
     margin-top: 60px;
 }
 
-#providerBtnSubmit {
+#companyBtnSubmit {
     background: linear-gradient(to right, #6156F9, #1A129F);
     height: 35px;
     width: 100px;
@@ -146,7 +146,7 @@
 }
 
 
-#providerBtnUpdate {
+#companyBtnUpdate {
     background: linear-gradient(to right, #6156F9, #1A129F);
     height: 35px;
     width: 100px;
@@ -158,7 +158,7 @@
     color: #ffffff;
 }
 
-#providerBtnCancel {
+#companyBtnCancel {
     background: linear-gradient(to right, #6156F9, #1A129F);
     height: 35px;
     width: 100px;
@@ -170,7 +170,7 @@
     color: #ffffff;
 }
 
-#pBtnSearch {
+#companyBtnSearch {
     height: 35px;
     width: 100px;
     border-radius: 10px;
@@ -197,11 +197,34 @@ textarea:focus {
     outline: none;
 }
 
-.ProviderTableDiv {
+.companyTableDiv {
     position: relative;
     margin-top: 60px;
     width: 100%;
     height: auto;
     padding-bottom: 150px;
     padding-right: 80px;
+}
+
+.companyTableDiv span {
+    width: 250px !important;
+    height: 5px !important;
+    background: rgba(240, 187, 17, 1) !important;
+    border-radius: 600px !important;
+    top: 17%;
+}
+
+#companyContainer select {
+    background-color: #ffffff;
+    padding: 0 20px 0 20px;
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#companyContainer select :focus {
+    outline: none;
 }

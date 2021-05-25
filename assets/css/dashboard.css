@@ -43,9 +43,10 @@ main {
 .table-responsive {
     width: 95%;
     margin-bottom: 15px;
-    overflow-y: hidden;
+    overflow-y: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
+    overflow-x: scroll;
 }
 
 .table-responsive .table {

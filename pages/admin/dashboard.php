@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../../assets/css/dashboard-content.css">
     <link rel="stylesheet" href="../../assets/css/admin-seeker.css">
     <link rel="stylesheet" href="../../assets/css/admin-provider.css">
+    <link rel="stylesheet" href="../../assets/css/admin-company.css">
+    <link rel="stylesheet" href="../../assets/css/admin-job.css">
     <link rel="stylesheet" href="../../assets/css/adminFooter.css">
 </head>
 <body>
@@ -50,6 +52,18 @@ include '../../includes/common/adminSlideMenu.php';
     ?>
     <!--provider end-->
 
+    <!--provider start-->
+    <?php
+    include '../../includes/admin/admin-company.php';
+    ?>
+    <!--provider end-->
+
+    <!--job start-->
+    <?php
+    include '../../includes/admin/admin-job.php';
+    ?>
+    <!--job end-->
+
 </main>
 <!--slide menu start-->
 <?php
@@ -57,7 +71,5 @@ include '../../includes/common/adminFooter.php';
 ?>
 <!--slide menu end-->
 <script src="../../assets/js/adminSideMenu.js"></script>
-<script src="../../assets/js/adminSeeker.js"></script>
-<script src="../../assets/js/adminProvider.js"></script>
 </body>
 </html>

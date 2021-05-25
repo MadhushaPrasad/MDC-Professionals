@@ -118,7 +118,7 @@
                 <span style="width: 280px"></span>
                 <button title="new Job Seeker"><i class="fa fa-plus"></i></button>
             </div>
-            <table class="table-responsive">
+            <table border="1" class="table-responsive">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -141,7 +141,10 @@
                     <td>199-04-13</td>
                     <td>0764727839</td>
                     <td>madushaprasad21@gmail.com</td>
-                    <td></td>
+                    <td>
+                        <i class="fas fa-trash-alt" style="color: red"></i>
+                        <i class="fas fa-edit" style="color: #F0BB11"></i>
+                    </td>
                 </tr>
 
                 </tbody>
@@ -156,7 +159,7 @@
                 <button title="New Job Provider"><i class="fa fa-plus"></i></button>
             </div>
 
-            <table class="table-responsive">
+            <table border="1" class="table-responsive">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -181,8 +184,8 @@
                     <td>0764727839</td>
                     <td>madushaprasad21@gmail.com</td>
                     <td>
-                        <i class="fas fa-trash-alt" style="color: red"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11"></i>
+                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
+                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
                     </td>
                 <tr>
 
@@ -198,7 +201,7 @@
                 <button title="New Job Company"><i class="fa fa-plus"></i></button>
             </div>
 
-            <table class="table-responsive">
+            <table border="1" class="table-responsive">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -223,8 +226,8 @@
                     <td>0764727839</td>
                     <td>madushaprasad21@gmail.com</td>
                     <td>
-                        <i class="fas fa-trash-alt" style="color: red"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11"></i>
+                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
+                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
                     </td>
                 <tr>
 
@@ -240,7 +243,7 @@
                 <button title="New Job"><i class="fa fa-plus"></i></button>
             </div>
 
-            <table class="table-responsive">
+            <table border="1" class="table-responsive">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -251,10 +254,6 @@
                     <th>DOB</th>
                     <th>Telephone</th>
                     <th>Email</th>
-                    <td>
-                        <i class="fas fa-trash-alt" style="color: red"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11"></i>
-                    </td>
                 </tr>
                 </thead>
                 <tbody>
@@ -268,8 +267,8 @@
                     <td>0764727839</td>
                     <td>madushaprasad21@gmail.com</td>
                     <td>
-                        <i class="fas fa-trash-alt" style="color: red"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11"></i>
+                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
+                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
                     </td>
                 <tr>
                 </tbody>

@@ -54,7 +54,7 @@
                 <h1>Job Provider Table</h1>
                 <span></span>
             </div>
-            <table class="table-responsive">
+            <table border="1" class="table-responsive">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -78,8 +78,8 @@
                     <td>Kalutara</td>
                     <td>0764727839</td>
                     <td>
-                        <i class="fas fa-trash-alt" style="color: red"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11"></i>
+                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
+                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
                     </td>
                 </tr>
                 </tbody>
@@ -87,5 +87,5 @@
         </div>
     </div>
 </div>
-
+<script src="../../assets/js/adminProvider.js"></script>
 

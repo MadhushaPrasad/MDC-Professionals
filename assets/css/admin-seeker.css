@@ -1,7 +1,8 @@
 #seekerContainer {
     padding-bottom: 170px;
-    font-family: 'Poppins';
     padding-left: 54px;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .seekerSectionHeader {
@@ -214,4 +215,5 @@ textarea:focus {
     width: 100%;
     height: auto;
     padding-bottom: 150px;
+    padding-right: 80px;
 }
