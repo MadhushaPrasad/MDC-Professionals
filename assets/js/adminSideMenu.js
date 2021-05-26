@@ -12,6 +12,8 @@ const companyContainer = document.getElementById('companyContainer');
 const jobContainer = document.getElementById('jobContainer');
 const categoryContainer = document.getElementById('categoryContainer');
 const profileContainer = document.getElementById('profileContainer');
+const messageContainer = document.getElementById('messageContainer');
+const chatBoxContainer = document.getElementById('chatBoxContainer');
 
 
 //load window onload content only
@@ -24,6 +26,8 @@ window.onload = function () {
     jobContainer.style.display = "none";
     categoryContainer.style.display = "none";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 };
 
 //load dashboard content only
@@ -36,6 +40,8 @@ dashboardLink.addEventListener('click', function () {
     categoryContainer.style.display = "none";
     companyContainer.style.display = "none";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 
     dashboardLink.classList.add("active");
     jobSeekerLink.classList.remove("active");
@@ -56,6 +62,8 @@ jobSeekerLink.addEventListener('click', function () {
     companyContainer.style.display = "none";
     seekerContainer.style.display = "block";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobProviderLink.classList.remove("active");
@@ -74,6 +82,8 @@ jobProviderLink.addEventListener('click', function () {
     companyContainer.style.display = "none";
     providerContainer.style.display = "block";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
@@ -92,6 +102,8 @@ companyLink.addEventListener('click', function () {
     categoryContainer.style.display = "none";
     companyContainer.style.display = "block";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
@@ -110,6 +122,8 @@ jobLink.addEventListener('click', function () {
     categoryContainer.style.display = "none";
     jobContainer.style.display = "block";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
@@ -129,6 +143,8 @@ categoryLink.addEventListener('click', function () {
     jobContainer.style.display = "none";
     categoryContainer.style.display = "block";
     profileContainer.style.display = "none";
+    messageContainer.style.display = "none";
+    chatBoxContainer.style.display = "none";
 
     dashboardLink.classList.remove("active");
     jobSeekerLink.classList.remove("active");
