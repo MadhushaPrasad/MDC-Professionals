@@ -13,15 +13,7 @@
     <!--    custom css-->
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/adminHeader.css">
-    <link rel="stylesheet" href="../../assets/css/admin-profile.css">
-    <link rel="stylesheet" href="../../assets/css/admin-chatBox.css">
-    <link rel="stylesheet" href="../../assets/css/admin-message.css">
     <link rel="stylesheet" href="../../assets/css/adminSlideMenu.css">
-    <link rel="stylesheet" href="../../assets/css/dashboard-content.css">
-    <link rel="stylesheet" href="../../assets/css/admin-seeker.css">
-    <link rel="stylesheet" href="../../assets/css/admin-provider.css">
-    <link rel="stylesheet" href="../../assets/css/admin-company.css">
-    <link rel="stylesheet" href="../../assets/css/admin-job.css">
     <link rel="stylesheet" href="../../assets/css/admin-category.css">
     <link rel="stylesheet" href="../../assets/css/adminFooter.css">
 </head>
@@ -38,11 +30,11 @@ include '../../includes/common/adminSlideMenu.php';
 <!--slide menu end-->
 <main>
 
-    <!--content start-->
+    <!--job start-->
     <?php
-    include '../../includes/admin/dashboard-content.php';
+    include '../../includes/admin/admin-category.php';
     ?>
-    <!--content menu end-->
+    <!--job end-->
 
 </main>
 <!--slide menu start-->

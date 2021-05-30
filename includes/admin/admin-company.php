@@ -1,3 +1,7 @@
+<?php
+require '../../../MDC-Professionals/config/DBConnection.php';
+?>
+
 <div id="companyContainer">
     <div class="companySectionHeader">
         <h1>Company</h1>
@@ -6,8 +10,31 @@
     <div class="companyFormDivContainer">
         <div class="companySearchDiv">
             <form action="" method="GET">
-                <input type="text" placeholder="Company ID">
-                <button type="submit" id="companyBtnSearch">Search</button>
+                <input type="text" placeholder="Company ID" name="companyID">
+                <button type="submit" id="companyBtnSearch" name="companySearchId">Search</button>
+                <?php
+                global $row;
+                if (isset($_GET['companySearchId'])) {
+                    $companyID = $_GET['companyID'];
+
+                    if (empty($companyID)) {
+                        ?>
+                        <script>
+                            console.log('hello');
+                        </script>
+                        <?php
+                    }
+                    $searchQuery = "SELECT * FROM student WHERE id = $companyID";
+                    $student = $connection->query($searchQuery);
+
+                    while ($resultSet = $student->fetch_assoc()) {
+                        $row .= '<tr>';
+                        $row .= '<td>' . $resultSet['id'] . '</td>';
+                        $row .= '<td>' . $resultSet['name'] . '</td>';
+                        $row .= '<tr>';
+                    }
+                }
+                ?>
             </form>
         </div>
         <div class="companyProfileDivContainer">
@@ -103,8 +130,9 @@
                 </thead>
                 <tbody style="overflow-x: scroll">
                 <tr>
-                    <td>Com001</td>
-                    <td>Pro001</td>
+                    <?php
+                    echo $row;
+                    ?>
                     <td>images</td>
                     <td>Sentura</td>
                     <td>madushaprasad21@gmail.com</td>
@@ -124,4 +152,5 @@
     </div>
 </div>
 <script src="../../assets/js/adminCompany.js"></script>
+<script src="../../controllers/companyController.js"></script>
 

@@ -1,5 +1,5 @@
 #dashBoardContainerDiv {
-    padding-right: 80px;
+    padding-right: 160px;
 }
 
 .adminDashboardContent {
@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-left: 60px;
 }
 
 .companyDiv span {

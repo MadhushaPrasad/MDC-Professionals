@@ -10,6 +10,7 @@
 }
 
 #companyContainer .companySectionHeader span {
+    position: absolute;
     width: 150px !important;
     height: 5px !important;
     background: rgba(240, 187, 17, 1) !important;
@@ -207,6 +208,7 @@ textarea:focus {
 }
 
 .companyTableDiv span {
+    position: absolute;
     width: 250px !important;
     height: 5px !important;
     background: rgba(240, 187, 17, 1) !important;

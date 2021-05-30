@@ -37,12 +37,11 @@ include '../../includes/common/adminSlideMenu.php';
 ?>
 <!--slide menu end-->
 <main>
-
-    <!--content start-->
+    <!--job start-->
     <?php
-    include '../../includes/admin/dashboard-content.php';
+    include '../../includes/admin/admin-job.php';
     ?>
-    <!--content menu end-->
+    <!--job end-->
 
 </main>
 <!--slide menu start-->

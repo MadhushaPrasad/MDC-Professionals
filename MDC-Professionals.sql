@@ -3,207 +3,207 @@ CREATE DATABASE mdc;
 USE mdc;
 
 CREATE TABLE user_r(
-	u_id INT IDENTITY(1,1) NOT NULL,
-	image VARCHAR(MAX) NOT NULL,
-	user_name  VARCHAR(50) NOT NULL,
-	email VARCHAR(50) NOT NULL,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	address VARCHAR(50) NOT NULL,
-	password VARCHAR(15) NOT NULL,
-	status VARCHAR(15) NOT NULL,
-	CONSTRAINT user_PK PRIMARY KEY(u_id)
+                       u_id       INT          NOT NULL AUTO_INCREMENT,
+                       image      VARCHAR(255) NOT NULL,
+                       user_name  VARCHAR(50)  NOT NULL,
+                       email      VARCHAR(50)  NOT NULL,
+                       first_name VARCHAR(50)  NOT NULL,
+                       last_name  VARCHAR(50)  NOT NULL,
+                       address    VARCHAR(50)  NOT NULL,
+                       password   VARCHAR(15)  NOT NULL,
+                       status     VARCHAR(15)  NOT NULL,
+                       CONSTRAINT PRIMARY KEY (u_id)
 );
 
 CREATE TABLE message(
-	m_id INT IDENTITY(1,1) NOT NULL,
-	u_id INT NOT NULL,
-	incoming_msg_id INT NOT NULL,
-	outgoing_msg_id INT NOT NULL,
-	msg VARCHAR(200) NOT NULL,
-	CONSTRAINT message_PK PRIMARY KEY(m_id),
-	CONSTRAINT message_FK FOREIGN KEY(u_id) REFERENCES user_r
+                        m_id            INT          NOT NULL AUTO_INCREMENT,
+                        u_id            INT          NOT NULL,
+                        incoming_msg_id INT          NOT NULL,
+                        outgoing_msg_id INT          NOT NULL,
+                        msg             VARCHAR(200) NOT NULL,
+                        CONSTRAINT PRIMARY KEY (m_id),
+                        CONSTRAINT FOREIGN KEY (u_id) REFERENCES user_r (u_id)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE seeker(
-	s_ID INT IDENTITY(1,1) NOT NULL,
-	u_id INT NOT NULL,
-	dob DATE NOT NULL,
-	CONSTRAINT seeker_PK PRIMARY KEY(s_ID),
-	CONSTRAINT seeker_FK FOREIGN KEY(u_id) REFERENCES user_r
+                       s_ID INT  NOT NULL AUTO_INCREMENT,
+                       u_id INT  NOT NULL,
+                       dob  DATE NOT NULL,
+                       CONSTRAINT PRIMARY KEY (s_ID),
+                       CONSTRAINT FOREIGN KEY (u_id) REFERENCES user_r (u_id)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE seeker_Telephone(
-	skeer_T_ID INT IDENTITY(1,1) NOT NULL,
-	s_ID INT NOT NULL,
-	telephone VARCHAR(11) NOT NULL,
-	CONSTRAINT seeker_Telephone_PK PRIMARY KEY(skeer_T_ID),
-	CONSTRAINT seeker_Telephone_FK FOREIGN KEY(s_ID) REFERENCES seeker
+                                 skeer_T_ID INT         NOT NULL AUTO_INCREMENT,
+                                 s_ID       INT         NOT NULL,
+                                 telephone  VARCHAR(11) NOT NULL,
+                                 CONSTRAINT PRIMARY KEY (skeer_T_ID),
+                                 CONSTRAINT FOREIGN KEY (s_ID) REFERENCES seeker (s_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE admin(
-	ad_id INT IDENTITY(1,1) NOT NULL,
-	u_id INT NOT NULL,
-	CONSTRAINT admin_PK PRIMARY KEY(ad_id),
-	CONSTRAINT admin_FK FOREIGN KEY(u_id) REFERENCES user_r
+                      ad_id INT NOT NULL AUTO_INCREMENT,
+                      u_id  INT NOT NULL,
+                      CONSTRAINT PRIMARY KEY (ad_id),
+                      CONSTRAINT FOREIGN KEY (u_id) REFERENCES user_r (u_id)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE provider(
-	p_ID INT IDENTITY(1,1) NOT NULL,
-	u_id INT NOT NULL,
-	CONSTRAINT provider_PK PRIMARY KEY(p_ID),
-	CONSTRAINT provider_FK FOREIGN KEY(u_id) REFERENCES user_r
+                         p_ID INT NOT NULL AUTO_INCREMENT,
+                         u_id INT NOT NULL,
+                         CONSTRAINT PRIMARY KEY (p_ID),
+                         CONSTRAINT FOREIGN KEY (u_id) REFERENCES user_r (u_id)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE provider_Telephone(
-	provider_T_ID INT IDENTITY(1,1) NOT NULL,
-	p_ID INT NOT NULL,
-	telephone VARCHAR(11) NOT NULL,
-	CONSTRAINT provider_Telephone_PK PRIMARY KEY(provider_T_ID),
-	CONSTRAINT provider_Telephone_FK FOREIGN KEY(p_ID) REFERENCES provider
+                                   provider_T_ID INT         NOT NULL AUTO_INCREMENT,
+                                   p_ID          INT         NOT NULL,
+                                   telephone     VARCHAR(11) NOT NULL,
+                                   CONSTRAINT PRIMARY KEY (provider_T_ID),
+                                   CONSTRAINT FOREIGN KEY (p_ID) REFERENCES provider (p_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE company(
-	company_ID INT IDENTITY(1,1) NOT NULL,
-	p_ID INT NOT NULL,
-	image VARCHAR(MAX) NOT NULL,
-	company_name  VARCHAR(50) NOT NULL,
-	email VARCHAR(100) NOT NULL,
-	web_url VARCHAR(100),
-	address VARCHAR(200) NOT NULL,
-	description VARCHAR(MAX) NOT NULL,
-	status VARCHAR(15) NOT NULL,
-	CONSTRAINT company_PK PRIMARY KEY(company_ID),
-	CONSTRAINT company_FK FOREIGN KEY(p_ID) REFERENCES provider
+                        company_ID   INT          NOT NULL AUTO_INCREMENT,
+                        p_ID         INT          NOT NULL,
+                        image        VARCHAR(255) NOT NULL,
+                        company_name VARCHAR(50)  NOT NULL,
+                        email        VARCHAR(100) NOT NULL,
+                        web_url      VARCHAR(100),
+                        address      VARCHAR(200) NOT NULL,
+                        description  VARCHAR(255) NOT NULL,
+                        status       VARCHAR(15)  NOT NULL,
+                        CONSTRAINT PRIMARY KEY (company_ID),
+                        CONSTRAINT FOREIGN KEY (p_ID) REFERENCES provider (p_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE company_Telephone(
-	company_T_ID INT IDENTITY(1,1) NOT NULL,
-	company_ID INT NOT NULL,
-	telephone VARCHAR(11) NOT NULL,
-	CONSTRAINT company_Telephone_PK PRIMARY KEY(company_T_ID),
-	CONSTRAINT company_Telephone_FK FOREIGN KEY(company_ID) REFERENCES company
+                                  company_T_ID INT         NOT NULL AUTO_INCREMENT,
+                                  company_ID   INT         NOT NULL,
+                                  telephone    VARCHAR(11) NOT NULL,
+                                  CONSTRAINT PRIMARY KEY (company_T_ID),
+                                  CONSTRAINT FOREIGN KEY (company_ID) REFERENCES company (company_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE main_category(
-	category_ID INT IDENTITY(1,1) NOT NULL,
-	category_name VARCHAR(50) NOT NULL,
-	CONSTRAINT main_category_PK PRIMARY KEY(category_ID)
+                              category_ID   INT         NOT NULL AUTO_INCREMENT,
+                              category_name VARCHAR(50) NOT NULL,
+                              CONSTRAINT main_category_PK PRIMARY KEY(category_ID)
 );
 
 CREATE TABLE company_details(
-	comD_ID INT IDENTITY(1,1) NOT NULL,
-	company_ID INT NOT NULL,
-	category_ID INT NOT NULL,
-	date DATE,
-	CONSTRAINT company_details_PK PRIMARY KEY(comD_ID),
-	CONSTRAINT company_details_FK_1 FOREIGN KEY(company_ID) REFERENCES company
+                                comD_ID     INT  NOT NULL AUTO_INCREMENT,
+                                company_ID  INT  NOT NULL,
+                                category_ID INT  NOT NULL,
+                                date        DATE NOT NULL,
+                                CONSTRAINT PRIMARY KEY (comD_ID),
+                                CONSTRAINT FOREIGN KEY (company_ID) REFERENCES company (company_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE,
-	CONSTRAINT company_details_FK_2 FOREIGN KEY(category_ID) REFERENCES main_category
+                                CONSTRAINT FOREIGN KEY (category_ID) REFERENCES main_category (category_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE main_rate(
-	mRate_Id INT IDENTITY(1,1) NOT NULL,
-	category_ID INT NOT NULL,
-	count INT NOT NULL,
-	CONSTRAINT main_rate_PK PRIMARY KEY(mRate_Id),
-	CONSTRAINT main_rate_FK FOREIGN KEY(category_ID) REFERENCES main_category
+                          mRate_Id    INT NOT NULL AUTO_INCREMENT,
+                          category_ID INT NOT NULL,
+                          count       INT NOT NULL,
+                          CONSTRAINT PRIMARY KEY (mRate_Id),
+                          CONSTRAINT FOREIGN KEY (category_ID) REFERENCES main_category (category_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE sub_category (
-	sub_category_ID INT IDENTITY(1,1) NOT NULL,
-	category_name VARCHAR(50) NOT NULL,
-	category_ID INT NOT NULL,
-	CONSTRAINT sub_category_PK PRIMARY KEY(sub_category_ID),
-	CONSTRAINT sub_category_FK FOREIGN KEY(category_ID) REFERENCES main_category
+                              sub_category_ID INT         NOT NULL AUTO_INCREMENT,
+                              category_name   VARCHAR(50) NOT NULL,
+                              category_ID     INT         NOT NULL,
+                              CONSTRAINT PRIMARY KEY (sub_category_ID),
+                              CONSTRAINT FOREIGN KEY (category_ID) REFERENCES main_category (category_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE sub_rate(
-	subRate_id INT IDENTITY(1,1) NOT NULL,
-	sub_category_ID INT NOT NULL,
-	count INT NOT NULL,
-	CONSTRAINT sub_rate_PK PRIMARY KEY(subRate_id),
-	CONSTRAINT sub_rate_FK FOREIGN KEY(sub_category_ID) REFERENCES sub_category
+                         subRate_id      INT NOT NULL AUTO_INCREMENT,
+                         sub_category_ID INT NOT NULL,
+                         count           INT NOT NULL,
+                         CONSTRAINT PRIMARY KEY (subRate_id),
+                         CONSTRAINT FOREIGN KEY (sub_category_ID) REFERENCES sub_category (sub_category_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE job(
-	job_ID INT IDENTITY(1,1) NOT NULL,
-	category_ID INT NOT NULL,
-	sub_category_ID INT NOT NULL,
-	j_name VARCHAR(100) NOT NULL,
-	img VARCHAR(MAX) NOT NULL,
-	description VARCHAR(MAX) NOT NULL,
-	price DECIMAL(10,2) NOT NULL,
-	status VARCHAR(10) NOT NULL,
-	CONSTRAINT job_PK PRIMARY KEY(job_ID),
-	CONSTRAINT job_FK_1 FOREIGN KEY(category_ID) REFERENCES main_category
+                    job_ID          INT           NOT NULL AUTO_INCREMENT,
+                    category_ID     INT           NOT NULL,
+                    sub_category_ID INT           NOT NULL,
+                    j_name          VARCHAR(100)  NOT NULL,
+                    img             VARCHAR(255)  NOT NULL,
+                    description     VARCHAR(255)  NOT NULL,
+                    price           DECIMAL(10,2) NOT NULL,
+                    status          VARCHAR(10)   NOT NULL,
+                    CONSTRAINT PRIMARY KEY (job_ID),
+                    CONSTRAINT FOREIGN KEY (category_ID) REFERENCES main_category (category_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE,
-	CONSTRAINT job_FK_2 FOREIGN KEY(sub_category_ID) REFERENCES sub_category
+                    CONSTRAINT FOREIGN KEY (sub_category_ID) REFERENCES sub_category (sub_category_ID)
 );
 
 CREATE TABLE payment(
-	payment_id INT IDENTITY(1,1) NOT NULL,
-	job_ID INT NOT NULL,
-	CONSTRAINT payment_PK PRIMARY KEY(payment_id),
-	CONSTRAINT payment_FK FOREIGN KEY(job_ID) REFERENCES job
+                        payment_id INT NOT NULL AUTO_INCREMENT,
+                        job_ID     INT NOT NULL,
+                        CONSTRAINT PRIMARY KEY (payment_id),
+                        CONSTRAINT FOREIGN KEY (job_ID) REFERENCES job (job_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 
 CREATE TABLE payment_Type(
-	payment_type_id INT IDENTITY(1,1) NOT NULL,
-	payment_id INT NOT NULL,
-	type VARCHAR(50) NOT NULL,
-	CONSTRAINT payment_Type_PK PRIMARY KEY(payment_type_id),
-	CONSTRAINT payment_Type_FK FOREIGN KEY(payment_id) REFERENCES payment
+                             payment_type_id INT         NOT NULL AUTO_INCREMENT,
+                             payment_id      INT         NOT NULL,
+                             type            VARCHAR(50) NOT NULL,
+                             CONSTRAINT PRIMARY KEY (payment_type_id),
+                             CONSTRAINT FOREIGN KEY (payment_id) REFERENCES payment (payment_id)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE salary(
-	salary_id INT IDENTITY(1,1) NOT NULL,
-	amount DECIMAL(10,2) NOT NULL,
-	CONSTRAINT salary_PK PRIMARY KEY(salary_id)
+                       salary_id INT           NOT NULL AUTO_INCREMENT,
+                       amount    DECIMAL(10,2) NOT NULL,
+                       CONSTRAINT PRIMARY KEY (salary_id)
 );
 
 
 CREATE TABLE payment_Details(
-	p_deID INT IDENTITY(1,1) NOT NULL,
-	payment_id INT NOT NULL,
-	salary_id INT NOT NULL,
-	card_number VARCHAR(17),
-	ex_date VARCHAR(10),
-	s_code VARCHAR(4),
-	date DATE,
-	status VARCHAR(10) NOT NULL,
-	CONSTRAINT payment_Details_PK PRIMARY KEY(p_deID),
-	CONSTRAINT payment_Details_FK_1 FOREIGN KEY(payment_id) REFERENCES payment
+                                p_deID      INT         NOT NULL AUTO_INCREMENT,
+                                payment_id  INT         NOT NULL,
+                                salary_id   INT         NOT NULL,
+                                card_number VARCHAR(17),
+                                ex_date     VARCHAR(10),
+                                s_code      VARCHAR(4),
+                                date        DATE,
+                                status      VARCHAR(10) NOT NULL,
+                                CONSTRAINT PRIMARY KEY (p_deID),
+                                CONSTRAINT FOREIGN KEY (payment_id) REFERENCES payment (payment_id)
 	ON UPDATE CASCADE ON DELETE CASCADE,
-	CONSTRAINT payment_Details_FK_2 FOREIGN KEY(salary_id) REFERENCES salary
+                                CONSTRAINT FOREIGN KEY (salary_id) REFERENCES salary (salary_id)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE job_seeker_details(
-	js_details_ID INT IDENTITY(1,1) NOT NULL,
-	job_ID INT NOT NULL,
-	s_ID INT NOT NULL,
-	apply_date DATE,
-	status VARCHAR(10) NOT NULL,
-	CONSTRAINT job_seeker_details_PK PRIMARY KEY(js_details_ID),
-	CONSTRAINT job_seeker_details_FK_1 FOREIGN KEY(job_ID) REFERENCES job
+                                   js_details_ID INT         NOT NULL AUTO_INCREMENT,
+                                   job_ID        INT         NOT NULL,
+                                   s_ID          INT         NOT NULL,
+                                   apply_date    DATE,
+                                   status        VARCHAR(10) NOT NULL,
+                                   CONSTRAINT job_seeker_details_PK PRIMARY KEY(js_details_ID),
+                                   CONSTRAINT job_seeker_details_FK_1 FOREIGN KEY(job_ID) REFERENCES job
 	ON UPDATE CASCADE ON DELETE CASCADE,
-	CONSTRAINT job_seeker_details_FK_2 FOREIGN KEY(s_ID) REFERENCES seeker
+                                   CONSTRAINT job_seeker_details_FK_2 FOREIGN KEY(s_ID) REFERENCES seeker
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 

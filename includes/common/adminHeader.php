@@ -5,12 +5,12 @@
     <h3>MDC Professionals</h3>
     <div class="btnGroupDiv">
         <a id="logOut" href="../../index.php">Log Out</a>
-        <a id="message">
+        <a id="message" href="../../pages/admin/admin-message-page.php">
             <div id="messageSq">
                 <img id="messageIc" src="../../assets/images/conversation.png" alt="message-icon">
             </div>
         </a>
-        <a id="profile">
+        <a id="profile" href="../../pages/admin/admin-profile-page.php">
             <div id="profileCircle">
 
             </div>

@@ -26,3 +26,10 @@ seekerBtnRemove.addEventListener('click', function () {
     document.getElementById("seekerProfileSeeker").setAttribute("src", '/MDC-Professionals/' +
         'assets/images/avatar-profile-picture.jpg');
 });
+
+// const dashboardLink = document.getElementById('dashboardLink');
+// const jobSeekerLink = document.getElementById('jobSeekerLink');
+// const jobProviderLink = document.getElementById('jobProviderLink');
+// const companyLink = document.getElementById('companyLink');
+// const jobLink = document.getElementById('jobLink');
+// const categoryLink = document.getElementById('categoryLink');

@@ -44,6 +44,55 @@ include '../../includes/common/adminSlideMenu.php';
     ?>
     <!--content menu end-->
 
+    <!--seeker start-->
+    <?php
+    include '../../includes/admin/admin-seeker.php';
+    ?>
+    <!--seeker end-->
+
+    <!--provider start-->
+    <?php
+    include '../../includes/admin/admin-provider.php';
+    ?>
+    <!--provider end-->
+
+    <!--provider start-->
+    <?php
+    include '../../includes/admin/admin-company.php';
+    ?>
+    <!--provider end-->
+
+    <!--job start-->
+    <?php
+    include '../../includes/admin/admin-job.php';
+    ?>
+    <!--job end-->
+
+    <!--job start-->
+    <?php
+    include '../../includes/admin/admin-category.php';
+    ?>
+    <!--job end-->
+
+    <!--message start-->
+    <?php
+    include '../../includes/admin/admin-chatBox.php';
+    ?>
+    <!--message end-->
+
+    <!--message start-->
+    <?php
+    include '../../includes/admin/admin-message.php';
+    ?>
+    <!--message end-->
+
+    <!--profile start-->
+    <?php
+    include '../../includes/admin/admin-profile.php';
+    ?>
+    <!--profile end-->
+
+
 </main>
 <!--slide menu start-->
 <?php
