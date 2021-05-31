@@ -204,7 +204,7 @@ textarea:focus {
     width: 100%;
     height: auto;
     padding-bottom: 150px;
-    padding-right: 80px;
+    padding-right: 150px;
 }
 
 .companyTableDiv span {
@@ -213,7 +213,7 @@ textarea:focus {
     height: 5px !important;
     background: rgba(240, 187, 17, 1) !important;
     border-radius: 600px !important;
-    top: 17%;
+    top: 3.5%;
 }
 
 #companyContainer select {

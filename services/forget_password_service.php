@@ -7,6 +7,3 @@ if (empty($email)) {
 } else {
     header('location:/MDC-Professionals/pages/reset_password.php');
 }
-
-
-

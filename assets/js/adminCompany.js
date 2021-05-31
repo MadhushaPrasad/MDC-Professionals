@@ -1,5 +1,11 @@
 const companyProfilePicFeild = document.getElementById('companyProfilePic');
 const companyBtnRemove = document.getElementById('companyBtnRemove');
+const dashboardLink = document.getElementById('dashboardLink');
+const jobSeekerLink = document.getElementById('jobSeekerLink');
+const jobProviderLink = document.getElementById('jobProviderLink');
+const companyLink = document.getElementById('companyLink');
+const jobLink = document.getElementById('jobLink');
+const categoryLink = document.getElementById('categoryLink');
 
 companyProfilePicFeild.addEventListener('change', function () {
     const file = document.getElementById("companyProfilePic").files;
@@ -26,3 +32,12 @@ companyBtnRemove.addEventListener('click', function () {
     document.getElementById("companyProfile").setAttribute("src", '/MDC-Professionals/' +
         'assets/images/building.png');
 });
+
+window.onload = function () {
+    dashboardLink.classList.remove("active");
+    jobSeekerLink.classList.remove("active");
+    jobProviderLink.classList.remove("active");
+    jobLink.classList.remove("active");
+    categoryLink.classList.remove("active");
+    companyLink.classList.add("active");
+};

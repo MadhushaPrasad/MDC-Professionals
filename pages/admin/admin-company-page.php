@@ -42,6 +42,5 @@ include '../../includes/common/adminSlideMenu.php';
 include '../../includes/common/adminFooter.php';
 ?>
 <!--slide menu end-->
-<script src="../../assets/js/adminSeeker.js"></script>
 </body>
 </html>

@@ -1,29 +1,7 @@
 <?php
 require '../../config/DBConnection.php';
-
-//get total count of providers
-$seekerCountQuery = "SELECT COUNT(s_ID) as seekerCount FROM seeker";
-$seekerCount = $connection->query($seekerCountQuery);
-$skCount = $seekerCount->fetch_assoc();
-
-//get total count of providers
-$providerCountQuery = "SELECT COUNT(p_ID) as providerCount FROM provider";
-$providerCount = $connection->query($providerCountQuery);
-$pvCount = $providerCount->fetch_assoc();
-
-//get total count of Companies
-$companyCountQuery = "SELECT COUNT(company_ID) as companyCount FROM company";
-$companyCount = $connection->query($companyCountQuery);
-$comCount = $companyCount->fetch_assoc();
-
-//get total count of jobs
-$jobCountQuery = "SELECT COUNT(job_ID) as jobCount FROM job";
-$jobCount = $connection->query($jobCountQuery);
-$jbCount = $jobCount->fetch_assoc();
-
-//$providerCountQuery = "SELECT COUNT(p_ID) FROM provider";
-//$providerCount = $connection->query($jobCountQuery);
-//$providerCount = $providerCount->fetch_assoc();
+require_once '../../services/dashboardService.php';
+$newConnection = $connection;
 ?>
 <div id="dashBoardContainerDiv">
     <div class="adminDashboardContent">
@@ -32,7 +10,7 @@ $jbCount = $jobCount->fetch_assoc();
                 <h4>Job Seekers</h4>
                 <h4>
                     <?php
-                    echo $skCount['seekerCount'];
+                    getProviderCount($newConnection);
                     ?>
                 </h4>
             </div>
@@ -40,7 +18,7 @@ $jbCount = $jobCount->fetch_assoc();
                 <h4>Job Providers</h4>
                 <h4>
                     <?php
-                    echo $pvCount['providerCount'];
+                    getSeekerCount($newConnection);
                     ?>
                 </h4>
             </div>
@@ -48,7 +26,7 @@ $jbCount = $jobCount->fetch_assoc();
                 <h4>Companies</h4>
                 <h4>
                     <?php
-                    echo $comCount['companyCount'];
+                    getCompanyCount($newConnection);
                     ?>
                 </h4>
             </div>
@@ -56,7 +34,7 @@ $jbCount = $jobCount->fetch_assoc();
                 <h4>Total Jobs</h4>
                 <h4>
                     <?php
-                    echo $jbCount['jobCount'];
+                    getJobCount($newConnection);
                     ?>
                 </h4>
             </div>
@@ -158,13 +136,14 @@ $jbCount = $jobCount->fetch_assoc();
         <div>
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Job Seeker</h1>
-                <span style="width: 280px"></span>
+                <span style="width: 280px;position: absolute;top: 66px;left: 35px;"></span>
                 <button title="new Job Seeker" id="btnNewJobSeeker"><i class="fa fa-plus"></i></button>
             </div>
             <table border="1" class="table-responsive">
                 <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Seeker ID</th>
                     <th>Image</th>
                     <th>User Name</th>
                     <th>Name</th>
@@ -175,21 +154,9 @@ $jbCount = $jobCount->fetch_assoc();
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>s001</td>
-                    <td>iamge</td>
-                    <td>Madhhush_99</td>
-                    <td>Madhusha Prasad</td>
-                    <td>Kalutara</td>
-                    <td>199-04-13</td>
-                    <td>0764727839</td>
-                    <td>madushaprasad21@gmail.com</td>
-                    <td>
-                        <i class="fas fa-trash-alt" style="color: red"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11"></i>
-                    </td>
-                </tr>
-
+                <?php
+                getAllLatestJobSeekers($newConnection);
+                ?>
                 </tbody>
             </table>
         </div>
@@ -198,40 +165,28 @@ $jbCount = $jobCount->fetch_assoc();
         <div>
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Job Providers</h1>
-                <span></span>
+                <span style="width: 280px;position: absolute;top: 66px;left: 35px;"></span>
                 <button title="New Job Provider" id="btnNewjobProvider"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
                 <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Provider ID</th>
                     <th>Image</th>
                     <th>User Name</th>
                     <th>Name</th>
                     <th>Address</th>
-                    <th>DOB</th>
                     <th>Telephone</th>
                     <th>Email</th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>s001</td>
-                    <td>iamge</td>
-                    <td>Madhhush_99</td>
-                    <td>Madhusha Prasad</td>
-                    <td>Kalutara</td>
-                    <td>199-04-13</td>
-                    <td>0764727839</td>
-                    <td>madushaprasad21@gmail.com</td>
-                    <td>
-                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
-                    </td>
-                <tr>
-
+                <?php
+                getAllLatestJobProviders($newConnection);
+                ?>
                 </tbody>
             </table>
         </div>
@@ -240,40 +195,29 @@ $jbCount = $jobCount->fetch_assoc();
         <div>
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Company</h1>
-                <span style="width: 270px"></span>
+                <span style="width: 280px;position: absolute;top: 66px;left: 35px;"></span>
                 <button title="New Job Company" id="btnNewcompany"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
                 <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>Company ID</th>
+                    <th>P_ID ID</th>
                     <th>Image</th>
-                    <th>User Name</th>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>DOB</th>
-                    <th>Telephone</th>
-                    <th>Email</th>
+                    <th>Company Name</th>
+                    <th>email</th>
+                    <th>web url</th>
+                    <th>address</th>
+                    <th>description</th>
+                    <th>status</th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>s001</td>
-                    <td>iamge</td>
-                    <td>Madhhush_99</td>
-                    <td>Madhusha Prasad</td>
-                    <td>Kalutara</td>
-                    <td>199-04-13</td>
-                    <td>0764727839</td>
-                    <td>madushaprasad21@gmail.com</td>
-                    <td>
-                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
-                    </td>
-                <tr>
-
+                <?php
+                getAllLatestCompany($newConnection);
+                ?>
                 </tbody>
             </table>
         </div>
@@ -282,38 +226,27 @@ $jbCount = $jobCount->fetch_assoc();
         <div>
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Jobs</h1>
-                <span style="width: 180px"></span>
+                <span style="width: 180px;position: absolute;top: 66px;left: 35px;"></span>
                 <button title="New Job" id="btnNewjob"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
                 <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>Job ID</th>
+                    <th>Main Category</th>
+                    <th>Sub Category</th>
+                    <th>Job Title</th>
                     <th>Image</th>
-                    <th>User Name</th>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>DOB</th>
-                    <th>Telephone</th>
-                    <th>Email</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>status</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>s001</td>
-                    <td>iamge</td>
-                    <td>Madhhush_99</td>
-                    <td>Madhusha Prasad</td>
-                    <td>Kalutara</td>
-                    <td>199-04-13</td>
-                    <td>0764727839</td>
-                    <td>madushaprasad21@gmail.com</td>
-                    <td>
-                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
-                    </td>
-                <tr>
+                <?php
+                getAllLatestJobs($newConnection);
+                ?>
                 </tbody>
             </table>
         </div>
