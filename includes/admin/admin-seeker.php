@@ -1,3 +1,7 @@
+<?php
+include '../services/adminseeker.php.php';
+?>
+
 <div id="seekerContainer">
     <div class="seekerSectionHeader">
         <h1>Job Seeker</h1>
@@ -22,7 +26,7 @@
             </form>
         </div>
         <div>
-            <form action="" method="GET">
+            <form  method="post" action="adminseeker.php">
                 <div>
                     <input type="text" placeholder="User Name" name="userName">
                     <input type="email" placeholder="Email" name="email">
@@ -54,7 +58,7 @@
                     <button type="button" id="btnUpload">Upload</button>
                 </div>
                 <div class="seekerButtonGroup">
-                    <button id="seekerBtnSubmit">Submit</button>
+                    <button id="seekerBtnSubmit" type="submit" name="save" >Submit</button>
                     <button id="seekerBtnUpdate">Update</button>
                     <button id="seekerBtnCancel">Cancel</button>
                 </div>
@@ -67,9 +71,8 @@
                 <h1>Job Seeker Table</h1>
                 <span></span>
             </div>
-            <table border="1" class="table-responsive">
-                <thead>
-                <tr>
+            <thead>
+            <tr>
                     <th>ID</th>
                     <th>Image</th>
                     <th>User Name</th>
@@ -81,23 +84,56 @@
                     <th>Date Of Birth</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>s001</td>
-                    <td>iamge</td>
-                    <td>Madhhush_99</td>
-                    <td>Madhusha</td>
-                    <td>Prasad</td>
-                    <td>madushaprasad21@gmail.com</td>
-                    <td>Kalutara</td>
-                    <td>0764727839</td>
-                    <td>
-                        <i class="fas fa-trash-alt" style="color: red;cursor: pointer;"></i>
-                        <i class="fas fa-edit" style="color: #F0BB11;cursor: pointer;"></i>
+				<tbody>
+
+            <?php
+				$result = mysqli_query($conn,"SELECT * FROM crud");
+					$i=1;
+					while($row = mysqli_fetch_array($result)) {
+				?>
+				<tr id="<?php echo $row["id"]; ?>">
+				<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" class="user_checkbox" data-user-id="<?php echo $row["id"]; ?>">
+								<label for="checkbox2"></label>
+							</span>
+						</td>
+					<td><?php echo $i; ?></td>
+					<td><?php echo $row["ID"]; ?></td>
+					<td><?php echo $row["Image"]; ?></td>
+					<td><?php echo $row["User_Name"]; ?></td>
+					<td><?php echo $row["First_Name"]; ?></td>
+                    <td><?php echo $row["Last_Name"]; ?></td>
+                    <td><?php echo $row["Email"]; ?></td>
+                    <td><?php echo $row["Address"]; ?></td>
+                    <td><?php echo $row["Telephone"]; ?></td>
+                    <td><?php echo $row["Date_Of_Birth"]; ?></td>
+					<td>
+						<a href="#editEmployeeModal" class="edit" data-toggle="modal">
+							<i class="material-icons update" data-toggle="tooltip" 
+							data-id="<?php echo $row["id"]; ?>"
+							data-image="<?php echo $row["image"]; ?>"
+							data-userName="<?php echo $row["userName"]; ?>"
+							data-firstName="<?php echo $row["firstName"]; ?>"
+                            data-lastName="<?php echo $row["lastName"]; ?>"
+							data-email="<?php echo $row["email"]; ?>"
+                            data-address="<?php echo $row["address"]; ?>"
+                            data-telephone="<?php echo $row["telephone"]; ?>"
+                            data-dateOfBirth="<?php echo $row["dateOfBirth"]; ?>"
+							title="Edit"></i>
+						</a>
+						<a href="#deleteEmployeeModal" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" 
+						 title="Delete"></i></a>
                     </td>
-                </tr>
-                </tbody>
-            </table>
+				</tr>
+				<?php
+				$i++;
+				}
+				?>
+				</tbody>
+			</table>
+
+           
         </div>
     </div>
 </div>
