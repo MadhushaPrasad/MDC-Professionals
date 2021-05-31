@@ -96,7 +96,7 @@ CREATE TABLE company_Telephone(
 CREATE TABLE main_category(
                               category_ID   INT         NOT NULL AUTO_INCREMENT,
                               category_name VARCHAR(50) NOT NULL,
-                              CONSTRAINT main_category_PK PRIMARY KEY(category_ID)
+                              CONSTRAINT main_category_PK PRIMARY KEY (category_ID)
 );
 
 CREATE TABLE company_details(
@@ -139,14 +139,14 @@ CREATE TABLE sub_rate(
 );
 
 CREATE TABLE job(
-                    job_ID          INT           NOT NULL AUTO_INCREMENT,
-                    category_ID     INT           NOT NULL,
-                    sub_category_ID INT           NOT NULL,
-                    j_name          VARCHAR(100)  NOT NULL,
-                    img             VARCHAR(255)  NOT NULL,
-                    description     VARCHAR(255)  NOT NULL,
-                    price           DECIMAL(10,2) NOT NULL,
-                    status          VARCHAR(10)   NOT NULL,
+                    job_ID          INT            NOT NULL AUTO_INCREMENT,
+                    category_ID     INT            NOT NULL,
+                    sub_category_ID INT            NOT NULL,
+                    j_name          VARCHAR(100)   NOT NULL,
+                    img             VARCHAR(255)   NOT NULL,
+                    description     VARCHAR(255)   NOT NULL,
+                    price           DECIMAL(10, 2) NOT NULL,
+                    status          VARCHAR(10)    NOT NULL,
                     CONSTRAINT PRIMARY KEY (job_ID),
                     CONSTRAINT FOREIGN KEY (category_ID) REFERENCES main_category (category_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE,
@@ -172,8 +172,8 @@ CREATE TABLE payment_Type(
 );
 
 CREATE TABLE salary(
-                       salary_id INT           NOT NULL AUTO_INCREMENT,
-                       amount    DECIMAL(10,2) NOT NULL,
+                       salary_id INT            NOT NULL AUTO_INCREMENT,
+                       amount    DECIMAL(10, 2) NOT NULL,
                        CONSTRAINT PRIMARY KEY (salary_id)
 );
 
@@ -200,10 +200,10 @@ CREATE TABLE job_seeker_details(
                                    s_ID          INT         NOT NULL,
                                    apply_date    DATE,
                                    status        VARCHAR(10) NOT NULL,
-                                   CONSTRAINT job_seeker_details_PK PRIMARY KEY(js_details_ID),
-                                   CONSTRAINT job_seeker_details_FK_1 FOREIGN KEY(job_ID) REFERENCES job
+                                   CONSTRAINT PRIMARY KEY (js_details_ID),
+                                   CONSTRAINT FOREIGN KEY (job_ID) REFERENCES job (job_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE,
-                                   CONSTRAINT job_seeker_details_FK_2 FOREIGN KEY(s_ID) REFERENCES seeker
+                                   CONSTRAINT FOREIGN KEY (s_ID) REFERENCES seeker (s_ID)
 	ON UPDATE CASCADE ON DELETE CASCADE
 );
 
@@ -532,4 +532,10 @@ INSERT INTO job_seeker_details (job_ID,s_ID,apply_date,status)
 VALUES(5,5,'2020-3-21','REJECED');
 
 
-
+SELECT *
+FROM Seeker s,
+     User_r u,
+     seeker_Telephone sT
+WHERE s.u_id = u.u_id
+  and s.s_ID = sT.s_ID
+LIMIT 10
