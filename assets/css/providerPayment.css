@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+}
+
+/*main content css*/
+
+main {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/
+}
+.paycontainer{
+    
+}
+.tik{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: chartreuse;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tik input[type="radio"] {
+    cursor: pointer;
+    margin-left: 30px;
+}
+.tik label {
+    cursor: pointer;
+    margin-left: 5px ;
+}
+#inputDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.inputDiv {
+    display: flex;
+    width: 40%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputDiv input {
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    width: 90%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-clip: padding-box;
+    padding: 0.250rem 0.40rem;
+    overflow: hidden;
+    color: #000000;
+}
+.paycontainer form {
+    text-align: center;
+}
+.paycontainer form button {
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(126, 118, 249, 0.702);
+    background: linear-gradient(to right, #6156F9, #1A129F);
+
+}
