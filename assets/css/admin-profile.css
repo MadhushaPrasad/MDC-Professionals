@@ -1,0 +1,99 @@
+#profileContainer {
+    padding-bottom: 170px;
+    padding-left: 54px;
+}
+
+.headerTitle {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.editButtonDiv {
+    width: 210px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.editButtonDiv button:nth-child(1) {
+    width: 70px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+}
+
+.editButtonDiv button {
+    width: 120px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+}
+
+.editProfileContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.edButtonGroup {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#editProfileImage {
+    width: 300px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.editProfileContainer input[type="text"] {
+    background-color: #ffffff;
+    height: 35px !important;
+    padding-left: 16px !important;
+    width: 60px !important;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+#editProfile {
+    background-color: #ffffff;
+    height: 35px !important;
+    padding-left: 16px !important;
+    width: 60px !important;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    margin: 12px;
+}
+
+.editProfileContainer button {
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(126, 118, 249, 0.702);
+    border: none;
+    outline: #eeeeee;
+}

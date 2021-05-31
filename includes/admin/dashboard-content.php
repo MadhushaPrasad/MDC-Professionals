@@ -1,21 +1,64 @@
+<?php
+require '../../config/DBConnection.php';
+
+//get total count of providers
+$seekerCountQuery = "SELECT COUNT(s_ID) as seekerCount FROM seeker";
+$seekerCount = $connection->query($seekerCountQuery);
+$skCount = $seekerCount->fetch_assoc();
+
+//get total count of providers
+$providerCountQuery = "SELECT COUNT(p_ID) as providerCount FROM provider";
+$providerCount = $connection->query($providerCountQuery);
+$pvCount = $providerCount->fetch_assoc();
+
+//get total count of Companies
+$companyCountQuery = "SELECT COUNT(company_ID) as companyCount FROM company";
+$companyCount = $connection->query($companyCountQuery);
+$comCount = $companyCount->fetch_assoc();
+
+//get total count of jobs
+$jobCountQuery = "SELECT COUNT(job_ID) as jobCount FROM job";
+$jobCount = $connection->query($jobCountQuery);
+$jbCount = $jobCount->fetch_assoc();
+
+//$providerCountQuery = "SELECT COUNT(p_ID) FROM provider";
+//$providerCount = $connection->query($jobCountQuery);
+//$providerCount = $providerCount->fetch_assoc();
+?>
 <div id="dashBoardContainerDiv">
     <div class="adminDashboardContent">
         <div class="countRow">
             <div class="countCard">
                 <h4>Job Seekers</h4>
-                <h4>20</h4>
+                <h4>
+                    <?php
+                    echo $skCount['seekerCount'];
+                    ?>
+                </h4>
             </div>
             <div class="countCard">
                 <h4>Job Providers</h4>
-                <h4>20</h4>
+                <h4>
+                    <?php
+                    echo $pvCount['providerCount'];
+                    ?>
+                </h4>
             </div>
             <div class="countCard">
                 <h4>Companies</h4>
-                <h4>20</h4>
+                <h4>
+                    <?php
+                    echo $comCount['companyCount'];
+                    ?>
+                </h4>
             </div>
             <div class="countCard">
                 <h4>Total Jobs</h4>
-                <h4>20</h4>
+                <h4>
+                    <?php
+                    echo $jbCount['jobCount'];
+                    ?>
+                </h4>
             </div>
         </div>
     </div>
@@ -116,7 +159,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Job Seeker</h1>
                 <span style="width: 280px"></span>
-                <button title="new Job Seeker"><i class="fa fa-plus"></i></button>
+                <button title="new Job Seeker" id="btnNewJobSeeker"><i class="fa fa-plus"></i></button>
             </div>
             <table border="1" class="table-responsive">
                 <thead>
@@ -156,7 +199,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Job Providers</h1>
                 <span></span>
-                <button title="New Job Provider"><i class="fa fa-plus"></i></button>
+                <button title="New Job Provider" id="btnNewjobProvider"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
@@ -198,7 +241,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Company</h1>
                 <span style="width: 270px"></span>
-                <button title="New Job Company"><i class="fa fa-plus"></i></button>
+                <button title="New Job Company" id="btnNewcompany"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">
@@ -240,7 +283,7 @@
             <div style="display: flex;flex-direction: row;">
                 <h1>Latest Jobs</h1>
                 <span style="width: 180px"></span>
-                <button title="New Job"><i class="fa fa-plus"></i></button>
+                <button title="New Job" id="btnNewjob"><i class="fa fa-plus"></i></button>
             </div>
 
             <table border="1" class="table-responsive">

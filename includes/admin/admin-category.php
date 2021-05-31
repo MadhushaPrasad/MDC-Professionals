@@ -62,5 +62,4 @@
         </div>
     </div>
 </div>
-<script src="../../assets/js/adminCompany.js"></script>
 

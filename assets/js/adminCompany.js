@@ -1,4 +1,5 @@
 const companyProfilePicFeild = document.getElementById('companyProfilePic');
+const companyBtnRemove = document.getElementById('companyBtnRemove');
 
 companyProfilePicFeild.addEventListener('change', function () {
     const file = document.getElementById("companyProfilePic").files;
@@ -19,4 +20,9 @@ companyProfilePicFeild.addEventListener('change', function () {
     } catch (err) {
         console.log("Error", "You cant upload a image \n without select", "error");
     }
+});
+
+companyBtnRemove.addEventListener('click', function () {
+    document.getElementById("companyProfile").setAttribute("src", '/MDC-Professionals/' +
+        'assets/images/building.png');
 });
