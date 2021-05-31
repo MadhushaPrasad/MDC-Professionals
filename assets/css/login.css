@@ -118,6 +118,7 @@ form .create_acc a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 15px;
 }
 
 .tik input[type="radio"] {

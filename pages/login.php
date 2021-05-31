@@ -19,14 +19,14 @@
     
             <div class="text" >Login Form </div><br>
 
+
+
+            <form action="#">
                 <div class="tik">
-                    <input type="radio" name="choose" id="seaker"><label for="seaker">Seaker</label>
+                    <input type="radio" name="choose" id="seeker"><label for="seaker">Seaker</label>
                     <input type="radio" name="choose" id="provider"><label for="provider">Provider</label>
                     <input type="radio" name="choose" id="admin"><label for="admin">Admin</label>
                 </div>
-
-            <form action="#">
-
                 <div class="data">
                     <input type="email" placeholder="Email" required>
                 </div>
@@ -37,7 +37,7 @@
 
                 <div class="btn">
                     <div class="inner"></div>
-                    <button type="submit"> Login</button>
+                    <button type="button" onclick="navigate()"> Login</button>
                 </div>
                 <div class="create_acc">Don't You Have An Acoount ?<br><br><a href="signup-welcome.php">Create
                         Account</a></div>
@@ -47,5 +47,5 @@
     </div>
 
 </body>
-
+<script src="../assets/js/login.js"></script>
 </html>
