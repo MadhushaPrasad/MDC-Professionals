@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if ((empty($_SESSION['email'] || $_SESSION['password'] || $_SESSION['userType']))) {
+    header('location:/MDC-Professionals/pages/login.php');
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +17,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!--    custom css-->
-    
+
     <link rel="stylesheet" href="../../assets/css/providerHeader.css">
     <link rel="stylesheet" href="../../assets/css/header-image.css">
     <link rel="stylesheet" href="../../assets/css/providerFooter.css">
@@ -26,7 +33,7 @@ include '../../includes/common/providerHeader.php';
 
 <!--main content-->
 <main>
-       <!-- header images start-->
+    <!-- header images start-->
     <?php
     include '../../includes/header-image.php';
     ?><br>
@@ -38,37 +45,37 @@ include '../../includes/common/providerHeader.php';
 
         <div class="paycontainer">
 
-        <form action="">
+            <form action="">
 
-            <div class="tik">
-                <input type="radio" name="choose" id="visa"><label for="seaker">VISA</label>
-                <input type="radio" name="choose" id="master"><label for="provider">MASTER</label>
-                <input type="radio" name="choose" id="paypal"><label for="admin">PAYPAL</label>
-            </div>
+                <div class="tik">
+                    <input type="radio" name="choose" id="visa"><label for="seaker">VISA</label>
+                    <input type="radio" name="choose" id="master"><label for="provider">MASTER</label>
+                    <input type="radio" name="choose" id="paypal"><label for="admin">PAYPAL</label>
+                </div>
 
                 <div class="in"></div>
-                    <div id="inputDiv">
-                        <div class="inputDiv">
-                            <input type="text" id="cNmuber" name="cNmuber" placeholder="Card Number" required>
-                        </div>
-                        <div class="inputDiv">
-                            <input type="text" id="exDate" name="exDate" placeholder=" Expire Date" required>
-                        </div>
+                <div id="inputDiv">
+                    <div class="inputDiv">
+                        <input type="text" id="cNmuber" name="cNmuber" placeholder="Card Number" required>
                     </div>
-                    <div id="inputDiv">
-                        <div class="inputDiv">
-                            <input type="email" id="sCode" name="sCode" placeholder="Security Code" required>
-                        </div>
-                        <div class="inputDiv">
-                            <input type="text" id="pAmount" name="pAmount" placeholder=" Payment Amount" required>
-                        </div>
+                    <div class="inputDiv">
+                        <input type="text" id="exDate" name="exDate" placeholder=" Expire Date" required>
                     </div>
-
-                    <button type="submit">Send</button>
                 </div>
+                <div id="inputDiv">
+                    <div class="inputDiv">
+                        <input type="email" id="sCode" name="sCode" placeholder="Security Code" required>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" id="pAmount" name="pAmount" placeholder=" Payment Amount" required>
+                    </div>
+                </div>
+
+                <button type="submit">Send</button>
+        </div>
         </form>
 
-        </div>
+    </div>
 
     </div>
 
