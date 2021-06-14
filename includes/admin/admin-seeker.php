@@ -26,7 +26,7 @@ include '../services/adminseeker.php.php';
             </form>
         </div>
         <div>
-            <form  method="post" action="adminseeker.php">
+            <form method="post" action="adminseeker.php">
                 <div>
                     <input type="text" placeholder="User Name" name="userName">
                     <input type="email" placeholder="Email" name="email">
@@ -58,7 +58,7 @@ include '../services/adminseeker.php.php';
                     <button type="button" id="btnUpload">Upload</button>
                 </div>
                 <div class="seekerButtonGroup">
-                    <button id="seekerBtnSubmit" type="submit" name="save" >Submit</button>
+                    <button id="seekerBtnSubmit" type="submit" name="save">Submit</button>
                     <button id="seekerBtnUpdate">Update</button>
                     <button id="seekerBtnCancel">Cancel</button>
                 </div>
@@ -73,71 +73,69 @@ include '../services/adminseeker.php.php';
             </div>
             <thead>
             <tr>
-                    <th>ID</th>
-                    <th>Image</th>
-                    <th>User Name</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                    <th>Telephone</th>
-                    <th>Date Of Birth</th>
-                </tr>
-                </thead>
-				<tbody>
+                <th>ID</th>
+                <th>Image</th>
+                <th>User Name</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Telephone</th>
+                <th>Date Of Birth</th>
+            </tr>
+            </thead>
+            <tbody>
 
             <?php
-				$result = mysqli_query($conn,"SELECT * FROM crud");
-					$i=1;
-					while($row = mysqli_fetch_array($result)) {
-				?>
-				<tr id="<?php echo $row["id"]; ?>">
-				<td>
+            $result = mysqli_query($conn, "SELECT * FROM crud");
+            $i = 1;
+            while ($row = mysqli_fetch_array($result)) {
+                ?>
+                <tr id="<?php echo $row["id"]; ?>">
+                    <td>
 							<span class="custom-checkbox">
 								<input type="checkbox" class="user_checkbox" data-user-id="<?php echo $row["id"]; ?>">
 								<label for="checkbox2"></label>
 							</span>
-						</td>
-					<td><?php echo $i; ?></td>
-					<td><?php echo $row["ID"]; ?></td>
-					<td><?php echo $row["Image"]; ?></td>
-					<td><?php echo $row["User_Name"]; ?></td>
-					<td><?php echo $row["First_Name"]; ?></td>
+                    </td>
+                    <td><?php echo $i; ?></td>
+                    <td><?php echo $row["ID"]; ?></td>
+                    <td><?php echo $row["Image"]; ?></td>
+                    <td><?php echo $row["User_Name"]; ?></td>
+                    <td><?php echo $row["First_Name"]; ?></td>
                     <td><?php echo $row["Last_Name"]; ?></td>
                     <td><?php echo $row["Email"]; ?></td>
                     <td><?php echo $row["Address"]; ?></td>
                     <td><?php echo $row["Telephone"]; ?></td>
                     <td><?php echo $row["Date_Of_Birth"]; ?></td>
-					<td>
-						<a href="#editEmployeeModal" class="edit" data-toggle="modal">
-							<i class="material-icons update" data-toggle="tooltip" 
-							data-id="<?php echo $row["id"]; ?>"
-							data-image="<?php echo $row["image"]; ?>"
-							data-userName="<?php echo $row["userName"]; ?>"
-							data-firstName="<?php echo $row["firstName"]; ?>"
-                            data-lastName="<?php echo $row["lastName"]; ?>"
-							data-email="<?php echo $row["email"]; ?>"
-                            data-address="<?php echo $row["address"]; ?>"
-                            data-telephone="<?php echo $row["telephone"]; ?>"
-                            data-dateOfBirth="<?php echo $row["dateOfBirth"]; ?>"
-							title="Edit"></i>
-						</a>
-						<a href="#deleteEmployeeModal" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" 
-						 title="Delete"></i></a>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons update" data-toggle="tooltip"
+                               data-id="<?php echo $row["id"]; ?>"
+                               data-image="<?php echo $row["image"]; ?>"
+                               data-userName="<?php echo $row["userName"]; ?>"
+                               data-firstName="<?php echo $row["firstName"]; ?>"
+                               data-lastName="<?php echo $row["lastName"]; ?>"
+                               data-email="<?php echo $row["email"]; ?>"
+                               data-address="<?php echo $row["address"]; ?>"
+                               data-telephone="<?php echo $row["telephone"]; ?>"
+                               data-dateOfBirth="<?php echo $row["dateOfBirth"]; ?>"
+                               title="Edit"></i>
+                        </a>
+                        <a href="#deleteEmployeeModal" class="delete" data-id="<?php echo $row["id"]; ?>"
+                           data-toggle="modal"><i class="material-icons" data-toggle="tooltip"
+                                                  title="Delete"></i></a>
                     </td>
-				</tr>
-				<?php
-				$i++;
-				}
-				?>
-				</tbody>
-			</table>
+                </tr>
+                <?php
+                $i++;
+            }
+            ?>
+            </tbody>
+            </table>
 
-           
+
         </div>
     </div>
 </div>
 <script src="../../assets/js/adminSeeker.js"></script>
-
-
-

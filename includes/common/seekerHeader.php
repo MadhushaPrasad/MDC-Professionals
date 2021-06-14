@@ -11,7 +11,7 @@
         <a href="/MDC-Professionals/pages/seeker/seekerConatct-us.php">Contact Us</a>
     </div>
     <div class="btnGroupDiv">
-        <a id="logOut" href="../../index.php">Log Out</a>
+        <a id="logOut" href="../../services/logoutService.php">Log Out</a>
         <a id="profile" href="">
             <div id="profileCircle">
 

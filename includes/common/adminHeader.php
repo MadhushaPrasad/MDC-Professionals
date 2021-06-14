@@ -4,7 +4,7 @@
     </div>
     <h3>MDC Professionals</h3>
     <div class="btnGroupDiv">
-        <a id="logOut" href="../../index.php">Log Out</a>
+        <a id="logOut" href="../../services/logoutService.php">Log Out</a>
         <a id="message" href="../../pages/admin/admin-message-page.php">
             <div id="messageSq">
                 <img id="messageIc" src="../../assets/images/conversation.png" alt="message-icon">
