@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if ((empty($_SESSION['email'] || $_SESSION['password'] || $_SESSION['userType']))) {
+    header('location:/MDC-Professionals/pages/login.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
