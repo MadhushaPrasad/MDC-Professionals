@@ -1,3 +1,13 @@
+<?php
+$connection = mysqli_connect("localhost", "root", "", "mdc");
+$userID = $_SESSION['userID'];
+$userImage = $connection->query("SELECT image FROM user_r WHERE u_id = $userID");
+$userImagePath = '';
+while ($image = $userImage->fetch_assoc()) {
+    $userImagePath = $image['image'];
+}
+$connection->close();
+?>
 <div class="adminHeader">
     <div class="logoDiv">
         <img id="logSmall" src="../../assets/images/small-logo.png" alt="">
@@ -17,3 +27,7 @@
         </a>
     </div>
 </div>
+
+<script>
+    document.getElementById('profileCircle').style.backgroundImage = "url('../../assets/images/upload/<?php echo $userImagePath; ?>')";
+</script>

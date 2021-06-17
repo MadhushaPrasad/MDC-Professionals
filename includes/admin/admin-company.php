@@ -1,6 +1,6 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
-require_once '../../config/DBConnection.php';
+/*require_once '../../config/DBConnection.php';
 //get All job companies
 function getAllCompanies($connection)
 {
@@ -212,7 +212,7 @@ if (isset($_GET['btnDelete'])) {
                </script>';
     }
 }
-?>
+*/ ?>
 
 <div id="companyContainer">
     <div class="companySectionHeader">
@@ -225,23 +225,8 @@ if (isset($_GET['btnDelete'])) {
                 <input type="text" placeholder="Company ID" name="companyID">
                 <button type="submit" id="companyBtnSearch" name="btnSearch">Search</button>
             </form>
-            <?php
-            searchCompany($connection);
-            ?>
+
         </div>
-        <!--<div class="companyProfileDivContainer">
-            <form action="" method="post" enctype="multipart/form-data">
-                <img id="companyProfile"><br>
-                <input type="text" placeholder="Choose"
-                       onfocus="(this.type='file')"
-                       required
-                       id="companyProfilePic"
-                       name="fileFeildName"
-                >
-                <button type="button" id="companyBtnRemove">Remove</button> &nbsp;
-                <button type="submit" id="companyBtnRemove" name="btnType" value="upload">Upload</button>
-            </form>
-        </div>-->
         <div>
             <form action="" method="post">
                 <img id="companyProfile"><br>
@@ -256,9 +241,7 @@ if (isset($_GET['btnDelete'])) {
                 <div>
                     <select name="provider_ID" id="companyProvider_ID" class="providerID">
                         <option disabled selected value="0">Provider ID</option>
-                        <?php
-                        getProviderID($connection);
-                        ?>
+
                     </select>
                     <input type="text" placeholder="CompanyName" name="comName">
                 </div>
@@ -288,9 +271,7 @@ if (isset($_GET['btnDelete'])) {
                     </select>
                     <select name="category" id="select-id" class="mySelect">
                         <option disabled selected value="0">Category</option>
-                        <?php
-                        getCategoryName($connection);
-                        ?>
+
                     </select>
                 </div>
                 <div class="companyButtonGroup">
@@ -323,12 +304,7 @@ if (isset($_GET['btnDelete'])) {
                 </tr>
                 </thead>
                 <tbody id="tBody" style="overflow-x: scroll;">
-                <?php
-                searchCompany($connection);
-                ?>
-                <?php
-                getAllCompanies($connection);
-                ?>
+
                 </tbody>
             </table>
         </div>

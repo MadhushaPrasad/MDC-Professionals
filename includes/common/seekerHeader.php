@@ -1,3 +1,13 @@
+<?php
+$connection = mysqli_connect("localhost", "root", "", "mdc");
+$userID = $_SESSION['userID'];
+$userImage = $connection->query("SELECT image FROM user_r WHERE u_id = $userID");
+$userImagePath = '';
+while ($image = $userImage->fetch_assoc()) {
+    $userImagePath = $image['image'];
+}
+$connection->close();
+?>
 <header id="header">
     <div class="logoDiv">
         <img alt="logo" src="/MDC-Professionals/assets/images/small-logo.png">
@@ -23,3 +33,6 @@
         <input id="toggle" type="checkbox"/>
     </div>
 </header>
+<script>
+    document.getElementById('profileCircle').style.backgroundImage = "url('../../assets/images/upload/<?php echo $userImagePath; ?>')";
+</script>

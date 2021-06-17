@@ -1,6 +1,6 @@
 <header id="header">
     <div class="logoDiv">
-        <img alt="logo" src="/MDC-Professionals/assets/images/small-logo.png">
+        <img alt="logo" src="/MDC-Professionals//assets/images/small-logo.png">
     </div>
     <div class="navLinkDiv">
         <a href="/MDC-Professionals/index.php">Home <br><span></span></a>

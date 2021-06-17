@@ -1,6 +1,6 @@
 <?php
-require "../config/DBConnection.php";
 session_start();
+require "../config/DBConnection.php";
 if (isset($_POST['login'])) {
     $userType = $_POST['choose'];
     $email = $_POST['email'];
@@ -21,6 +21,7 @@ if (isset($_POST['login'])) {
                     $_SESSION["email"] = $_COOKIE['email'];
                     $_SESSION["password"] = $_COOKIE['pass'];
                     $_SESSION["userType"] = $_COOKIE['type'];
+                    $_SESSION['userID'] = $userID;
                     header('location:/MDC-Professionals/pages/seeker/seekerHomepage.php');
                 } else {
                     header('location:/MDC-Professionals/pages/login.php');
@@ -46,6 +47,7 @@ if (isset($_POST['login'])) {
                     $_SESSION["email"] = $_COOKIE['email'];
                     $_SESSION["password"] = $_COOKIE['pass'];
                     $_SESSION["userType"] = $_COOKIE['type'];
+                    $_SESSION['userID'] = $userID;
                     header('location:/MDC-Professionals/pages/provider/providerHomepage.php');
                 } else {
                     header('location:/MDC-Professionals/pages/login.php');
@@ -72,6 +74,7 @@ if (isset($_POST['login'])) {
                         $_SESSION["email"] = $_COOKIE['email'];
                         $_SESSION["password"] = $_COOKIE['pass'];
                         $_SESSION["userType"] = $_COOKIE['type'];
+                        $_SESSION['userID'] = $userID;
                         header('location:/MDC-Professionals/pages/admin/dashboard.php');
                     } else {
                         $_SESSION['message'] = "Your not a User in our database please register Or reEnter details again..!";

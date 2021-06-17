@@ -38,7 +38,7 @@
     height: 35px;
     border-radius: 100%;
     border: 2px solid #ffffff;
-    background-image: url('../../assets/images/artworks-000072263734-b4172l-t500x500.jpg');
+    /*background-image: url('../../assets/images/artworks-000072263734-b4172l-t500x500.jpg');*/
     background-size: cover;
     background-position: 50% 50%;
     box-shadow: 0 10px 20px rgba(126, 118, 249, 0.161)
