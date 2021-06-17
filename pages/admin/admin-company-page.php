@@ -95,6 +95,8 @@ if (isset($_SESSION['message'])) {
                 text: "<?php echo $message?>",
                 icon: "error",
             });
+        <?php $_SESSION['message'] = ""?>
+            break;
         case "Please Click Edit button on table before Update.!":
             swal({
                 title: "Warning",
