@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #053769;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins';
+    background: linear-gradient(115deg, #ffffff 30%, #1A129F 90%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    width: 100%;
+}
+
+.imgDiv {
+    position: absolute;
+    width: 50%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+.headerText {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.imgDiv img {
+    position: relative;
+    top: 10%;
+    width: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.formDiv {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 110vh;
+}
+
+.container {
+    background: #ffffff;
+    width: 400px;
+    height: 650px;
+    border-radius: 25px;
+    margin-left: 60px;
+    box-shadow: 0 10px 20px rgba(126, 118, 249, 0.702);
+}
+
+.container img {
+    width: 100px;
+    height: 60px;
+    margin-left: 35%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input[type="file"] {
+    background-color: #ffffff;
+    width: 250px;
+    height: 28px;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(126, 118, 249, 0.702);
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.form input[type="text"], input[type="date"], input[type="email"], input[type="password"] {
+    background-color: #ffffff;
+    width: 250px;
+    height: 28px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(126, 118, 249, 0.702);
+    outline: none;
+    padding-left: 10px;
+}
+
+.form button {
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(126, 118, 249, 0.702);
+    background: linear-gradient(to right, #6156F9, #1A129F);
+}
+
+.form a {
+    text-decoration: none;
+    color: #000000;
+}
