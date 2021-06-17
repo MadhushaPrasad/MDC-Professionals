@@ -11,7 +11,7 @@
             </form>
         </div>
         <div>
-            <form action="" method="GET">
+            <form action="../../pages/admin/admin-category-page.php" method="post">
                 <div>
                     <input type="text" placeholder="Main Category" name="categoryName">
                 </div>
@@ -31,7 +31,6 @@
         <div>
             <div style="display: flex;flex-direction: row;">
                 <h1>Category Table</h1>
-                <span></span>
             </div>
             <table border="1" class="table-responsive">
                 <thead>

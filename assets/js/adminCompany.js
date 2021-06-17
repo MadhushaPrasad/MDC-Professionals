@@ -1,4 +1,4 @@
-const companyProfilePicFeild = document.getElementById('companyProfilePic');
+const companyProfilePicFeild = document.getElementById('profile-image');
 const companyBtnRemove = document.getElementById('companyBtnRemove');
 const dashboardLink = document.getElementById('dashboardLink');
 const jobSeekerLink = document.getElementById('jobSeekerLink');
@@ -8,7 +8,7 @@ const jobLink = document.getElementById('jobLink');
 const categoryLink = document.getElementById('categoryLink');
 
 companyProfilePicFeild.addEventListener('change', function () {
-    const file = document.getElementById("companyProfilePic").files;
+    const file = document.getElementById("profile-image").files;
     try {
         if (!(file[0].name === 'undefine')) {
             if (file.length > 0) {

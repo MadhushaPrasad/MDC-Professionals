@@ -10,7 +10,7 @@ $newConnection = $connection;
                 <h4>Job Seekers</h4>
                 <h4>
                     <?php
-                    getProviderCount($newConnection);
+                    getSeekerCount($newConnection);
                     ?>
                 </h4>
             </div>
@@ -18,7 +18,7 @@ $newConnection = $connection;
                 <h4>Job Providers</h4>
                 <h4>
                     <?php
-                    getSeekerCount($newConnection);
+                    getProviderCount($newConnection);
                     ?>
                 </h4>
             </div>
