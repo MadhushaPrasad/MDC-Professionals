@@ -6,7 +6,7 @@
         <div>
             <div
                     class="pie"
-                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 70, "colorSlice": "#4CAF50",
+                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 80, "colorSlice": "#4CAF50",
          "colorCircle": "#e6e6e6" }'
             ></div>
             <p>Web Development</p>
@@ -14,7 +14,7 @@
         <div>
             <div
                     class="pie"
-                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 70, "colorSlice": "#4CAF50",
+                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 75, "colorSlice": "#4CAF50",
          "colorCircle": "#e6e6e6" }'
             ></div>
             <p>Web Development</p>
@@ -22,7 +22,7 @@
         <div>
             <div
                     class="pie"
-                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 70, "colorSlice": "#4CAF50",
+                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 10, "colorSlice": "#4CAF50",
          "colorCircle": "#e6e6e6" }'
             ></div>
             <p>Web Development</p>
@@ -31,7 +31,7 @@
         <div>
             <div
                     class="pie"
-                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 70, "colorSlice": "#4CAF50",
+                    data-pie='{ "lineargradient": ["yellow","#ff0000"], "round": true, "percent": 50, "colorSlice": "#4CAF50",
          "colorCircle": "#e6e6e6" }'
             ></div>
             <p>Web Development</p>
@@ -79,7 +79,7 @@
         setInterval(() => {
             const options = {
                 index: 4,
-                percent: Math.floor(Math.random() * 100 + 1),
+                percent: Math.floor(50),
             };
             circle.animationTo(options);
         }, 2000);
