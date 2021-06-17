@@ -222,8 +222,9 @@ VALUES('artworks-000072263734-b4172l-t500x500.jpg','Dimuth','dimuthDimuth9@gmail
 INSERT INTO user_r (image,user_name,email,first_name,last_name,address,password,status) 
 VALUES('artworks-000072263734-b4172l-t500x500.jpg','Dakshith','abiNissanka@gmail.com','Abi','Nissanka','Gampaha','@4545Ma','Online');
 
-INSERT INTO user_r (image,user_name,email,first_name,last_name,address,password,status) 
-VALUES('artworks-000072263734-b4172l-t500x500.jpg','Chalani','chalani@gmail.com','Chalani','amali','Gampaha','@4545Ma','Online');
+INSERT INTO user_r (image,user_name,email,first_name,last_name,address,password,status)
+VALUES ('fileHandlingMetjods.png', 'Chalani', 'chalanilk@gmail.com', 'Chalani', 'amali', 'Gampaha', '@4545Ma',
+        'Online');
 
 /* SAMPLE DATA OF Message Table */
 
