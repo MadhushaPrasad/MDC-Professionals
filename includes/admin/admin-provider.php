@@ -10,40 +10,34 @@
                 <button type="submit" id="pBtnSearch">Search</button>
             </form>
         </div>
-        <div class="providerProfileDivContainer">
-            <form action="" method="GET">
-                <img id="providerProfile">
-                <input type="text" placeholder="Choose"
-                       onfocus="(this.type='file')"
-                       required
-                       id="providerProfilePic"
-                >
-                <button type="button" id="providerBtnRemove">Remove</button>
-            </form>
-        </div>
+        
         <div>
-            <form action="" method="GET">
+            <form action="../../services/admin-provider-page-Service.php" method="POST">
+            <img id="providerProfile"><br>
+                <input type="file" name="profileImage" id="providerProfilePic"
+                       placeholder="Choose a Profile image" required="" capture>
+                <button type="button" id="providerBtnRemove">Remove</button>
                 <div>
-                    <input type="text" placeholder="User Name" name="userName">
-                    <input type="email" placeholder="Email" name="email">
+                    <input type="text" placeholder="User Name" name="User_Name">
+                    <input type="email" placeholder="Email" name="Email">
                 </div>
                 <div>
-                    <input type="text" placeholder="First Name" name="firstName">
-                    <input type="text" placeholder="Last Name" name="lastName">
+                    <input type="text" placeholder="First Name" name="First_Name">
+                    <input type="text" placeholder="Last Name" name="'Last_Name">
                 </div>
                 <div>
                     <textarea name="Address" id="pAddress" cols="30" rows="10" placeholder="Address"></textarea>
                 </div>
                 <div style="display: flex;">
-                    <input type="text" placeholder="Phone Number" name="tel">
+                    <input type="text" placeholder="Phone Number" name="Phone_Number">
 
                     <input type="password" placeholder="Password" name="password"><br>
                     <input type="password" placeholder="Confirm Password" name="conPassword">
                 </div>
                 <div class="providerButtonGroup">
-                    <button id="providerBtnSubmit">Submit</button>
-                    <button id="providerBtnUpdate">Update</button>
-                    <button id="providerBtnCancel">Cancel</button>
+                    <button id="providerBtnSubmit" name="submit">Submit</button>
+                    <button id="providerBtnUpdate" name="update">Update</button>
+                    <button id="providerBtnCancel" name="cancle">Cancel</button>
                 </div>
             </form>
         </div>
