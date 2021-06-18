@@ -38,6 +38,7 @@ if(count($_POST)>0){
         $email = $_POST['email'];
         $address = $_POST['address'];
         $telephone = $_POST['telephone'];
+
         $dateOfBirth = $_POST['dateOfBirth'];
 
 	$sql = "UPDATE `user_r` SET `image`='$image',`userName`='$userName',`firstName`='$firstName',`lastName`='$lastName',`email`='$email',`address`='$address',`telephone`='$telephone',`dateOfBirth`='$dateOfBirth' WHERE id=$id";

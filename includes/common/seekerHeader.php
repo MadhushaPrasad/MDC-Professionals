@@ -15,7 +15,7 @@ $connection->close();
     <div class="navLinkDiv">
         <a href="/MDC-Professionals/pages/seeker/seekerHomepage.php">Home <br><span></span></a>
         <a href="/MDC-Professionals/pages/seeker/seekerFinding_job.php">Finding a Jobs</a>
-        <a href="/MDC-Professionals/pages/finding_job.php">My Jobs</a>
+        <a href="/MDC-Professionals/pages/seeker/seekerFinding_job.php">My Jobs</a>
         <a href="/MDC-Professionals/pages/seeker/seekerAbout-us.php">Message</a>
         <a href="/MDC-Professionals/pages/seeker/seekerAbout-us.php">About Us</a>
         <a href="/MDC-Professionals/pages/seeker/seekerConatct-us.php">Contact Us</a>

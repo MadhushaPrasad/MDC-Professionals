@@ -23,6 +23,7 @@ if ((empty($_SESSION['email'] || $_SESSION['password'] || $_SESSION['userType'])
     <link rel="stylesheet" href="../../assets/css/adminSlideMenu.css">
     <link rel="stylesheet" href="../../assets/css/admin-category.css">
     <link rel="stylesheet" href="../../assets/css/adminFooter.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 <!--header start-->
@@ -51,5 +52,40 @@ include '../../includes/common/adminFooter.php';
 <!--slide menu end-->
 <script src="../../assets/js/adminSideMenu.js"></script>
 <script src="../../assets/js/dashboard-content.js"></script>
+
+<?php
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+}
+?>
+<script>
+    switch ("<?php echo $message?>") {
+        case "Category Added Successfully":
+            swal({
+                title: "Successfully",
+                text: "<?php echo $message?>",
+                icon: "success",
+            });
+        <?php $_SESSION['message'] = ""?>
+            break;
+        case "Something Wrong Category Not Added":
+            swal({
+                title: "Warning",
+                text: "<?php echo $message?>",
+                icon: "error",
+            });
+        <?php $_SESSION['message'] = ""?>
+            break;
+        case "Please Input Data to add category":
+            swal({
+                title: "Warning",
+                text: "<?php echo $message?>",
+                icon: "error",
+            });
+        <?php $_SESSION['message'] = ""?>
+            break;
+        default:
+    }
+</script>
 </body>
 </html>
